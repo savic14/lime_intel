@@ -2,19 +2,23 @@ name: Daily Lime Intel Update
 
 on:
   schedule:
-    - cron: '0 22 * * 1-5'  # 5pm hora centro (UTC-6) lunes a viernes
-  workflow_dispatch:          # permite correrlo manualmente desde GitHub
+    - cron: '0 22 * * 1-5'
+  workflow_dispatch:
 
 jobs:
   update:
     runs-on: ubuntu-latest
 
+    env:
+      USDA_API_KEY: ${{ secrets.USDA_API_KEY }}
+      BANXICO_TOKEN: ${{ secrets.BANXICO_TOKEN }}
+
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -23,8 +27,8 @@ jobs:
 
       - name: Create .env
         run: |
-          echo "USDA_API_KEY=${{ secrets.USDA_API_KEY }}" > .env
-          echo "BANXICO_TOKEN=${{ secrets.BANXICO_TOKEN }}" >> .env
+          echo "USDA_API_KEY=${USDA_API_KEY}" > .env
+          echo "BANXICO_TOKEN=${BANXICO_TOKEN}" >> .env
 
       - name: Update prices
         run: python3 scripts/update_prices.py --solo-fetch
