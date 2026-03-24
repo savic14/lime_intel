@@ -8,7 +8,11 @@ import pandas as pd
 import streamlit as st
 from pathlib import Path
 
-PROJECT_ROOT   = Path(__file__).resolve().parents[1]
+import os
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+# En Streamlit Cloud los datos estan en la raiz del repo
+if not (PROJECT_ROOT / 'data').exists():
+    PROJECT_ROOT = Path(__file__).resolve().parents[0]
 FORECAST_PATH  = PROJECT_ROOT / "data/processed/daily_forecast_base.csv"
 SCORECARD_PATH = PROJECT_ROOT / "data/processed/daily_forecast_scorecard.csv"
 
