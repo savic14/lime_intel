@@ -1,0 +1,43 @@
+MODEL VARIABLES V1
+
+CORE MARKET
+official_price
+size
+quality
+
+SUPPLY / LOGISTICS
+truck_crossings
+
+WEATHER
+rain_mm_origin
+
+CALENDAR / MARKET CYCLE
+week_of_year
+month
+day_of_week
+is_market_signal_day
+days_since_market_signal
+
+USDA SIGNAL
+usda_publish_hour
+is_tuesday_usda
+is_usda_publish_day
+
+EXTERNAL COMPETITION
+colombia_entry_index
+# optional future replacement:
+# colombia_import_volume
+
+DERIVED FEATURES
+price_lag_1
+price_lag_3
+price_lag_7
+ma_3
+ma_7
+price_change_1d
+price_change_7d
+
+EXCLUDED FOR NOW (NOT AUTOMATIC)
+harvest activity in Mexico
+manual comments
+subjective field intuition

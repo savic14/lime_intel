@@ -1,0 +1,2 @@
+run_date,market,size,quality,last_date,last_official_price,predicted_target_3d,direction_3d,mae,rmse,rows_used
+2026-03-16 20:38:58,US_MCALLEN,230,1,2026-03-20,53.0,51.8221,BAJA,2.858,3.1481,8

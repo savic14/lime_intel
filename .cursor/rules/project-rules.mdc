@@ -1,0 +1,24 @@
+---
+description: Rules for the LimeIntel project
+alwaysApply: true
+---
+
+You are working on a production-grade Python project called LimeIntel.
+
+Business goal:
+Predict Persian lime prices in Mexico and the United States, identify key price drivers, and support buying/selling decisions.
+
+Mandatory rules:
+- Use Python only.
+- Keep the project modular.
+- Separate ingestion, cleaning, feature engineering, modeling, evaluation, and dashboard layers.
+- Never put business logic directly in the Streamlit UI.
+- Always explain the plan before changing multiple files.
+- Prefer maintainable, production-style code over quick hacks.
+- Use pandas for processing.
+- Use scikit-learn baselines before advanced models.
+- Prefer LightGBM for nonlinear tabular prediction.
+- Prevent data leakage in all modeling steps.
+- Use time-based validation.
+- Include comments, docstrings, and simple logging where useful.
+- Do not rename the project structure without explaining why.

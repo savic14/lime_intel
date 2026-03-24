@@ -1,0 +1,3 @@
+report_date,source_format,url,local_path,status
+2024-05-15,TXT,https://mymarketnews.ams.usda.gov/filerepo/sites/default/files/2402/2024-05-15/1120236/ams_2402_01060.txt,data/raw/usda_ix_fv110/2024-05-15.txt,failed_known_url
+2024-05-16,PDF,https://mymarketnews.ams.usda.gov/filere/sites/default/files/2402/2024-05-16/1120594/ams_2402_01061.pdf,data/raw/usda_ix_fv110/2024-05-16.pdf,failed_known_url

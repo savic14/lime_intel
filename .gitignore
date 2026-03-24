@@ -1,0 +1,10 @@
+.env
+.DS_Store
+__pycache__/
+*.pyc
+handoff_claude/
+handoff_claude.zip
+colombia_run.log
+data/raw/
+logs/
+*.log

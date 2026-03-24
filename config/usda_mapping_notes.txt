@@ -1,0 +1,29 @@
+IX_FV110 -> market_master.csv
+report_date -> date
+market/location -> market
+size -> size
+quality/grade -> quality
+price_mostly_low + price_mostly_high -> official_price (midpoint)
+fallback: price_low + price_high -> official_price (midpoint)
+published_datetime -> price_signal_datetime
+source_price -> USDA
+notes -> market comments
+
+MC_FV170 -> market_master.csv
+ship_date/report_date -> date
+movement summary / daily truck volume -> truck_crossings
+source_trucks -> USDA
+
+External weather source -> market_master.csv
+daily rain in origin region -> rain_mm_origin
+source_rain -> NOAA or chosen source
+
+Calculated fields
+week_of_year
+month
+day_of_week
+is_holiday
+is_market_signal_day
+market_week_start
+market_week_end
+days_since_market_signal
