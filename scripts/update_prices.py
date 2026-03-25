@@ -69,8 +69,16 @@ def fetch_day(d, api_key):
                               row.get("mostly_low_price",""), row.get("mostly_high_price",""))
         if price is None: continue
         quality, appearance_raw = map_quality(row.get("appear",""))
+        low_p   = row.get("low_price",   None)
+        high_p  = row.get("high_price",  None)
+        mlow_p  = row.get("mostly_low_price",  None)
+        mhigh_p = row.get("mostly_high_price", None)
         rows.append({"date": d.isoformat(), "market": "US_MCALLEN",
                      "size": size, "quality": quality, "official_price": price,
+                     "low_price":         float(low_p)   if low_p   not in (None,"") else None,
+                     "high_price":        float(high_p)  if high_p  not in (None,"") else None,
+                     "mostly_low_price":  float(mlow_p)  if mlow_p  not in (None,"") else None,
+                     "mostly_high_price": float(mhigh_p) if mhigh_p not in (None,"") else None,
                      "appearance_raw": appearance_raw,
                      "market_tone": str(row.get("market_tone_comments","")).strip(),
                      "demand_tone": str(row.get("demand_tone_comments","")).strip(),
