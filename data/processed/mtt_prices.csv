@@ -1,2 +1,4 @@
-date,fuente,calibres,calidad,precio_min_mxn,precio_max_mxn,precio_mid_mxn,notas
-2026-03-24,Infocitricos Facebook,150/175/200,Primera,43.0,45.0,44.0,Cortes nuevos. Color y textura buena. Aledanas hasta 46 MXN/kg.
+date,fuente,calibres,calidad,precio_min_mxn,precio_max_mxn,precio_mid_mxn,notas,zona,kg_caja,precio_min_kg,precio_max_kg,unidad
+2026-03-24,Infocitricos Facebook,150/175/200,Primera,43.0,45.0,44.0,Cortes nuevos. Color y textura buena. Aledanas hasta 46 MXN/kg.,,,,,
+2026-03-25,Infocitricos Facebook - San Manuel MTT,150/175/200,Primera Verde,900.0,1000.0,950.0,Cortes nuevos. Segunda 600-700/caja. Terceras 200/caja. Hueso 100/caja.,"Martinez de la Torre, Ver.",24.0,37.5,41.67,pesos_caja_grande
+2026-03-25,Infocitricos Facebook - Tuzamapan/Tlapacoyan,Verdes,Primera Verde,950.0,1150.0,1050.0,Zona aledaña a MTT. Verdes primera.,"Tuzamapan/Tlapacoyan, Ver.",24.0,39.58,47.92,pesos_caja_grande
