@@ -1,150 +1,250 @@
 """
-fetch_lluvia_nasa.py
---------------------
-Descarga datos historicos de lluvia y temperatura en Martinez de la Torre,
-Veracruz (zona principal de produccion de limon persa) desde NASA POWER API.
-
-Sin registro ni API key requerida.
-
-Uso:
-    python3 scripts/fetch_lluvia_nasa.py
-
-Output:
-    data/processed/lluvia_veracruz_historico.csv
+fetch_lluvia_nasa.py — Lluvia 5 zonas productoras de limon persa
+Fuente: NASA POWER API (sin autenticacion)
+Zonas por participacion en produccion nacional:
+  1. Martinez de la Torre, Ver.  54%
+  2. Tuxtepec / Papaloapan, Oax. 16%
+  3. Huimanguillo, Tabasco        7%
+  4. Valladolid, Yucatan          5%
+  5. Cd. Valles / Tamazunchale SLP exportacion directa
 """
-
-import urllib.request
-import json
+import requests
 import pandas as pd
 from pathlib import Path
+from datetime import datetime, timedelta
 
-OUT = Path("data/processed")
-OUT.mkdir(parents=True, exist_ok=True)
+OUTPUT_DIR = Path("data/processed")
+OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# Coordenadas Martinez de la Torre, Veracruz
-# Principal zona productora de limon persa en Mexico (~70% de produccion)
-LAT  = 20.0667
-LON  = -97.0500
+ZONAS = {
+    "mtt":       {"nombre": "Martinez de la Torre, Ver.", "lat": 20.0667, "lon": -97.0500, "pct": 54},
+    "tuxtepec":  {"nombre": "Tuxtepec, Oax.",             "lat": 18.0833, "lon": -96.1167, "pct": 16},
+    "tabasco":   {"nombre": "Huimanguillo, Tabasco",       "lat": 17.8333, "lon": -93.3833, "pct":  7},
+    "yucatan":   {"nombre": "Valladolid, Yucatan",         "lat": 20.6897, "lon": -88.2022, "pct":  5},
+    "slp":       {"nombre": "Cd. Valles, SLP",             "lat": 21.9833, "lon": -99.0167, "pct":  5},
+}
 
-def fetch_nasa_power(start: str, end: str) -> dict:
-    """
-    Descarga datos de NASA POWER para un rango de fechas.
-    start/end formato: YYYYMMDD
-    Parametros:
-      PRECTOTCORR = Precipitacion corregida (mm/dia)
-      T2M_MAX     = Temperatura maxima a 2m (C)
-      T2M_MIN     = Temperatura minima a 2m (C)
-    """
-    url = (
-        "https://power.larc.nasa.gov/api/temporal/daily/point"
-        f"?parameters=PRECTOTCORR,T2M_MAX,T2M_MIN"
-        f"&community=AG"
-        f"&longitude={LON}&latitude={LAT}"
-        f"&start={start}&end={end}"
-        f"&format=JSON"
-    )
-    with urllib.request.urlopen(url, timeout=60) as r:
-        return json.loads(r.read())
+NASA_BASE = "https://power.larc.nasa.gov/api/temporal/daily/point"
+PARAMS_NASA = "PRECTOTCORR,T2M_MAX,T2M_MIN"
 
-def main():
-    print("=" * 55)
-    print("NASA POWER — Lluvia Martinez de la Torre, Veracruz")
-    print("=" * 55)
-    print(f"Coordenadas: {LAT}N, {LON}W")
-    print("Descargando 2018-2026...")
+START_HIST = "20180101"
 
-    # NASA POWER acepta hasta 10 años por llamado
-    # Descargamos en dos bloques para mayor confiabilidad
-    bloques = [
-        ("20180101", "20211231"),
-        ("20220101", "20260324"),
-    ]
 
-    all_rows = []
+def fetch_nasa_zone(zona_key: str, zona: dict, start: str, end: str) -> pd.DataFrame:
+    params = {
+        "parameters": PARAMS_NASA,
+        "community":  "AG",
+        "longitude":  zona["lon"],
+        "latitude":   zona["lat"],
+        "start":      start,
+        "end":        end,
+        "format":     "JSON",
+    }
+    r = requests.get(NASA_BASE, params=params, timeout=60)
+    if r.status_code != 200:
+        print(f"  ERROR {zona_key}: {r.status_code}")
+        return pd.DataFrame()
 
-    for i, (start, end) in enumerate(bloques):
-        print(f"\n  Bloque {i+1}: {start} → {end}")
-        try:
-            data = fetch_nasa_power(start, end)
-            lluvia = data["properties"]["parameter"]["PRECTOTCORR"]
-            tmax   = data["properties"]["parameter"]["T2M_MAX"]
-            tmin   = data["properties"]["parameter"]["T2M_MIN"]
+    data = r.json()
+    lluvia_raw = data["properties"]["parameter"]["PRECTOTCORR"]
+    tmax_raw   = data["properties"]["parameter"].get("T2M_MAX", {})
+    tmin_raw   = data["properties"]["parameter"].get("T2M_MIN", {})
 
-            for fecha in lluvia:
-                all_rows.append({
-                    "date":      pd.to_datetime(fecha, format="%Y%m%d").date(),
-                    "lluvia_mm": max(0.0, float(lluvia[fecha])),
-                    "temp_max":  float(tmax[fecha]),
-                    "temp_min":  float(tmin[fecha]),
-                })
-            print(f"  OK — {len(lluvia)} dias")
-        except Exception as e:
-            print(f"  ERROR: {e}")
+    rows = []
+    for date_str, mm in lluvia_raw.items():
+        if mm < 0:
+            mm = 0.0
+        rows.append({
+            "date":     date_str,
+            "zona_key": zona_key,
+            "zona":     zona["nombre"],
+            "lat":      zona["lat"],
+            "lon":      zona["lon"],
+            "pct_prod": zona["pct"],
+            "lluvia_mm": round(float(mm), 3),
+            "tmax":     round(float(tmax_raw.get(date_str, -999)), 2),
+            "tmin":     round(float(tmin_raw.get(date_str, -999)), 2),
+        })
 
-    if not all_rows:
-        raise SystemExit("No se descargaron datos")
+    df = pd.DataFrame(rows)
+    df["date"] = pd.to_datetime(df["date"], format="%Y%m%d", errors="coerce")
+    df = df.dropna(subset=["date"]).sort_values("date").reset_index(drop=True)
+    return df
 
-    df = pd.DataFrame(all_rows).sort_values("date").reset_index(drop=True)
 
-    # ── Features de lluvia ────────────────────────────────────────────────────
+def add_rolling_features(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.sort_values("date").reset_index(drop=True)
+    df["lluvia_3d"]  = df["lluvia_mm"].rolling(3,  min_periods=1).sum()
+    df["lluvia_7d"]  = df["lluvia_mm"].rolling(7,  min_periods=1).sum()
+    df["lluvia_14d"] = df["lluvia_mm"].rolling(14, min_periods=1).sum()
 
-    # Acumulados rolling
-    df["lluvia_3d"]  = df["lluvia_mm"].rolling(3).sum()
-    df["lluvia_7d"]  = df["lluvia_mm"].rolling(7).sum()
-    df["lluvia_14d"] = df["lluvia_mm"].rolling(14).sum()
-
-    # Dias consecutivos con lluvia significativa (>5mm = dificil cortar)
     consec = []
-    count  = 0
+    count = 0
     for v in df["lluvia_mm"]:
         count = count + 1 if v > 5 else 0
         consec.append(count)
     df["dias_lluvia_consec"] = consec
+    df["evento_lluvia"] = (df["lluvia_mm"] > 20).astype(int)
+    return df
 
-    # Lags del efecto en oferta
-    # Lluvia hoy → menos fruta en McAllen en 3-7 dias
-    df["lluvia_lag3"]    = df["lluvia_mm"].shift(3)
-    df["lluvia_lag5"]    = df["lluvia_mm"].shift(5)
-    df["lluvia_lag7"]    = df["lluvia_mm"].shift(7)
-    df["lluvia_3d_lag3"] = df["lluvia_3d"].shift(3)
-    df["lluvia_3d_lag5"] = df["lluvia_3d"].shift(5)
-    df["lluvia_7d_lag5"] = df["lluvia_7d"].shift(5)
-    df["lluvia_7d_lag7"] = df["lluvia_7d"].shift(7)
 
-    # Eventos severos (>20mm = muy probable que no se corte)
-    df["evento_lluvia"]      = (df["lluvia_mm"] > 20).astype(int)
-    df["evento_lluvia_lag5"] = df["evento_lluvia"].shift(5)
-    df["evento_lluvia_lag7"] = df["evento_lluvia"].shift(7)
+def main():
+    today     = datetime.today()
+    end_date  = today.strftime("%Y%m%d")
 
-    # Dias consecutivos con lluvia shifteados
-    df["dias_consec_lag3"] = df["dias_lluvia_consec"].shift(3)
-    df["dias_consec_lag5"] = df["dias_lluvia_consec"].shift(5)
+    print("=" * 60)
+    print("NASA POWER — Lluvia 5 zonas productoras limon persa")
+    print("=" * 60)
 
-    # Proxy de sequia (temp alta + sin lluvia reciente)
-    df["sequia_proxy"] = (
-        (df["temp_max"] > 35) & (df["lluvia_7d"] < 5)
-    ).astype(int)
+    all_zones = []
 
-    # Guardar
-    out_path = OUT / "lluvia_veracruz_historico.csv"
-    df.to_csv(out_path, index=False)
+    for zona_key, zona in ZONAS.items():
+        output_path = OUTPUT_DIR / f"lluvia_{zona_key}.csv"
 
-    print(f"\n{'='*55}")
-    print(f"OK — {len(df):,} registros totales")
-    print(f"Rango: {df['date'].min()} -> {df['date'].max()}")
-    print(f"Guardado: {out_path} ({out_path.stat().st_size/1024:.1f} KB)")
+        # Determinar desde cuando descargar
+        if output_path.exists():
+            existing = pd.read_csv(output_path)
+            existing["date"] = pd.to_datetime(existing["date"])
+            last_date = existing["date"].max()
+            start_date = (last_date + timedelta(days=1)).strftime("%Y%m%d")
+            print(f"\n{zona['nombre']} ({zona['pct']}%)")
+            print(f"  Existente hasta: {last_date.date()} — descargando desde {start_date}")
+        else:
+            start_date = START_HIST
+            existing   = pd.DataFrame()
+            print(f"\n{zona['nombre']} ({zona['pct']}%)")
+            print(f"  Primera descarga desde {start_date}")
 
-    print(f"\n── Estadisticas generales ──")
-    print(f"  Dias sin lluvia (0mm):     {(df['lluvia_mm']==0).sum():,}")
-    print(f"  Dias lluvia leve (<5mm):   {((df['lluvia_mm']>0)&(df['lluvia_mm']<=5)).sum():,}")
-    print(f"  Dias lluvia media (5-20mm):{((df['lluvia_mm']>5)&(df['lluvia_mm']<=20)).sum():,}")
-    print(f"  Dias lluvia fuerte (>20mm):{(df['lluvia_mm']>20).sum():,}")
+        if start_date > end_date:
+            print("  Ya al dia")
+            df_zone = existing
+        else:
+            # Descargar en bloques de 4 años
+            start_dt = datetime.strptime(start_date, "%Y%m%d")
+            end_dt   = datetime.strptime(end_date,   "%Y%m%d")
+            chunks   = []
+            cursor   = start_dt
+            while cursor <= end_dt:
+                chunk_end = min(cursor + timedelta(days=4*365), end_dt)
+                s = cursor.strftime("%Y%m%d")
+                e = chunk_end.strftime("%Y%m%d")
+                print(f"  Bloque: {s} → {e}")
+                df_chunk = fetch_nasa_zone(zona_key, zona, s, e)
+                if not df_chunk.empty:
+                    chunks.append(df_chunk)
+                cursor = chunk_end + timedelta(days=1)
 
-    print(f"\n── Lluvia reciente (ultimos 15 dias) ──")
-    print(df[["date","lluvia_mm","lluvia_3d","dias_lluvia_consec","evento_lluvia"]].tail(15).to_string(index=False))
+            if chunks:
+                new_data = pd.concat(chunks).drop_duplicates("date")
+                if not existing.empty:
+                    df_zone = pd.concat([existing, new_data]).drop_duplicates("date").sort_values("date").reset_index(drop=True)
+                else:
+                    df_zone = new_data.sort_values("date").reset_index(drop=True)
+            else:
+                df_zone = existing
 
-    print(f"\n── Correlacion lluvia vs precio futuro (requiere merge con precios) ──")
-    print("  Corre experimento_v4.py para ver correlaciones con precio")
+        # Agregar features rolling
+        if not df_zone.empty:
+            df_zone = add_rolling_features(df_zone)
+            df_zone.to_csv(output_path, index=False)
+            print(f"  Guardado: {output_path.name} ({len(df_zone):,} filas)")
+            print(f"  Rango: {df_zone['date'].min().date()} → {df_zone['date'].max().date()}")
+            lluvia_rec = df_zone.tail(7)["lluvia_mm"].sum()
+            print(f"  Lluvia ultimos 7d: {lluvia_rec:.1f} mm")
+
+        all_zones.append(df_zone)
+
+    # Crear archivo consolidado (pivot por zona)
+    print("\n" + "=" * 60)
+    print("Consolidando todas las zonas...")
+
+    dfs = []
+    for zona_key, zona in ZONAS.items():
+        path = OUTPUT_DIR / f"lluvia_{zona_key}.csv"
+        if path.exists():
+            df = pd.read_csv(path)
+            df["date"] = pd.to_datetime(df["date"])
+            df = df[["date", "zona_key", "lluvia_mm", "lluvia_3d", "lluvia_7d", "lluvia_14d",
+                      "dias_lluvia_consec", "evento_lluvia"]].copy()
+            dfs.append(df)
+
+    if dfs:
+        combined = pd.concat(dfs).sort_values(["date", "zona_key"]).reset_index(drop=True)
+
+        # Pivot ancho para compatibilidad con build_model_base.py
+        pivot = combined.pivot_table(
+            index="date", columns="zona_key",
+            values=["lluvia_mm", "lluvia_7d", "lluvia_14d"]
+        )
+        pivot.columns = ["_".join(c) for c in pivot.columns]
+        pivot = pivot.reset_index()
+
+        # Promedio ponderado por produccion (pcts)
+        pcts = {k: v["pct"] for k, v in ZONAS.items()}
+        total_pct = sum(pcts.values())
+
+        ll_cols = [f"lluvia_mm_{k}" for k in ZONAS.keys() if f"lluvia_mm_{k}" in pivot.columns]
+        if ll_cols:
+            pivot["lluvia_mm_ponderada"] = sum(
+                pivot[f"lluvia_mm_{k}"] * pcts[k] / total_pct
+                for k in ZONAS.keys() if f"lluvia_mm_{k}" in pivot.columns
+            )
+            l7_cols = [f"lluvia_7d_{k}" for k in ZONAS.keys() if f"lluvia_7d_{k}" in pivot.columns]
+            pivot["lluvia_7d_ponderada"] = sum(
+                pivot[f"lluvia_7d_{k}"] * pcts[k] / total_pct
+                for k in ZONAS.keys() if f"lluvia_7d_{k}" in pivot.columns
+            )
+            l14_cols = [f"lluvia_14d_{k}" for k in ZONAS.keys() if f"lluvia_14d_{k}" in pivot.columns]
+            pivot["lluvia_14d_ponderada"] = sum(
+                pivot[f"lluvia_14d_{k}"] * pcts[k] / total_pct
+                for k in ZONAS.keys() if f"lluvia_14d_{k}" in pivot.columns
+            )
+
+        # Mantener compatibilidad: columnas originales = ponderadas
+        pivot["lluvia_mm"]  = pivot["lluvia_mm_ponderada"]
+        pivot["lluvia_7d"]  = pivot["lluvia_7d_ponderada"]
+        pivot["lluvia_14d"] = pivot["lluvia_14d_ponderada"]
+
+        # Features lag para modelo
+        pivot = pivot.sort_values("date").reset_index(drop=True)
+        pivot["lluvia_14d_lag6"] = pivot["lluvia_14d"].shift(6)
+        pivot["lluvia_7d_lag7"]  = pivot["lluvia_7d"].shift(7)
+        pivot["lluvia_3d_lag7"]  = pivot.get("lluvia_3d_mtt", pivot["lluvia_mm"]).shift(7) if "lluvia_3d_mtt" in pivot.columns else pivot["lluvia_mm"].shift(7)
+
+        combined_path = OUTPUT_DIR / "lluvia_zonas_consolidado.csv"
+        pivot.to_csv(combined_path, index=False)
+
+        # Compatibilidad con scripts existentes — sobreescribir lluvia_veracruz_historico.csv
+        # usando la columna ponderada (antes era solo MTT)
+        compat = pivot[["date", "lluvia_mm", "lluvia_7d", "lluvia_14d",
+                         "lluvia_14d_lag6", "lluvia_7d_lag7"]].copy()
+
+        # Agregar columnas que espera build_model_base
+        compat["lluvia_3d"]          = pivot["lluvia_mm"].rolling(3).sum()
+        compat["lluvia_lag9"]         = pivot["lluvia_mm"].shift(9)
+        compat["lluvia_3d_lag7"]      = compat["lluvia_3d"].shift(7)
+        compat["dias_lluvia_consec"]  = 0
+        compat["dias_consec_lag5"]    = 0
+        compat["evento_lluvia_lag7"]  = 0
+
+        compat.to_csv(OUTPUT_DIR / "lluvia_veracruz_historico.csv", index=False)
+
+        print(f"Consolidado: {combined_path.name} ({len(pivot):,} filas, {len(pivot.columns)} columnas)")
+        print(f"Compatibilidad: lluvia_veracruz_historico.csv actualizado con promedio ponderado")
+
+        # Resumen ultimos 7 dias por zona
+        print("\n── Lluvia ultimos 7 dias por zona ──")
+        for zona_key, zona in ZONAS.items():
+            path = OUTPUT_DIR / f"lluvia_{zona_key}.csv"
+            if path.exists():
+                df = pd.read_csv(path)
+                df["date"] = pd.to_datetime(df["date"])
+                rec = df.tail(7)["lluvia_mm"].sum()
+                nivel = "ALTA" if rec > 40 else ("MEDIA" if rec > 15 else "baja")
+                print(f"  {zona['nombre']:<35} {rec:6.1f} mm  {nivel}")
+
+    print("\nDone.")
+
 
 if __name__ == "__main__":
     main()
