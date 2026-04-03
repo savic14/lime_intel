@@ -1,0 +1,580 @@
+date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostly_high_price,official_price,market_tone,reporter_comment
+2026-02-02,Atlanta,110,Mexico,Fine Appearance,46.0,,,,,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-02-02,Atlanta,110,Mexico,Fair Quality,36.0,37.0,36.5,,37.0,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",
+2026-02-02,Atlanta,150,Mexico,Fine Appearance,39.0,40.0,,,40.0,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-02-02,Atlanta,150,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-02-02,Atlanta,150,Colombia,BASE,28.0,30.0,29.0,30.0,30.0,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-02-02,Atlanta,175,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional lower
+2026-02-02,Atlanta,175,Mexico,Fine Appearance,39.0,40.0,,,40.0,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-02-02,Atlanta,175,Mexico,Fair Quality,26.0,28.0,,,28.0,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",
+2026-02-02,Atlanta,175,Colombia,BASE,28.0,30.0,29.0,30.0,30.0,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-02-02,Atlanta,200,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional lower
+2026-02-02,Atlanta,200,Mexico,Fine Appearance,40.0,,,,,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-02-02,Atlanta,200,Colombia,Fine Appearance,38.5,39.5,,,39.5,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-02-02,Atlanta,200,Colombia,BASE,28.0,30.0,28.0,29.0,29.0,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",
+2026-02-02,Atlanta,230,Mexico,Fine Appearance,40.0,,,,,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional lower
+2026-02-02,Atlanta,230,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional lower
+2026-02-02,Atlanta,230,Colombia,BASE,28.0,30.0,28.0,29.0,29.0,"MARKET SEEDED TYPE HIGHER, SEEDLESS TYPE ABOUT STEADY",
+2026-02-03,Atlanta,110,Mexico,Fair Quality,36.0,37.0,36.5,,37.0,MARKET ABOUT STEADY,
+2026-02-03,Atlanta,110,Mexico,Fine Appearance,46.0,,,,,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-03,Atlanta,150,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-03,Atlanta,150,Mexico,Fine Appearance,39.0,40.0,,,40.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-03,Atlanta,150,Colombia,BASE,28.0,30.0,29.0,30.0,30.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-03,Atlanta,175,Mexico,Fair Quality,26.0,28.0,,,28.0,MARKET ABOUT STEADY,
+2026-02-03,Atlanta,175,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET ABOUT STEADY,occasional lower
+2026-02-03,Atlanta,175,Mexico,Fine Appearance,39.0,40.0,,,40.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-03,Atlanta,175,Colombia,BASE,28.0,30.0,29.0,30.0,30.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-03,Atlanta,200,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET ABOUT STEADY,occasional lower
+2026-02-03,Atlanta,200,Mexico,Fine Appearance,40.0,,,,,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-03,Atlanta,200,Colombia,Fine Appearance,38.5,39.5,,,39.5,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-03,Atlanta,200,Colombia,BASE,28.0,30.0,28.0,29.0,29.0,MARKET ABOUT STEADY,
+2026-02-03,Atlanta,230,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET ABOUT STEADY,occasional lower
+2026-02-03,Atlanta,230,Mexico,Fine Appearance,40.0,,,,,MARKET ABOUT STEADY,occasional lower
+2026-02-03,Atlanta,230,Colombia,BASE,28.0,30.0,28.0,29.0,29.0,MARKET ABOUT STEADY,
+2026-02-04,Atlanta,110,Mexico,Fine Appearance,46.0,,,,,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",occasional higher/lower
+2026-02-04,Atlanta,110,Mexico,Fair Quality,36.0,37.0,36.5,,37.0,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",
+2026-02-04,Atlanta,150,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",occasional higher/lower
+2026-02-04,Atlanta,150,Mexico,Fine Appearance,39.0,40.0,,,40.0,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",occasional higher/lower
+2026-02-04,Atlanta,150,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",occasional higher/lower
+2026-02-04,Atlanta,175,Mexico,Fair Quality,26.0,28.0,,,28.0,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",
+2026-02-04,Atlanta,175,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",occasional lower
+2026-02-04,Atlanta,175,Mexico,Fine Appearance,39.0,40.0,,,40.0,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",occasional higher/lower
+2026-02-04,Atlanta,175,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",occasional higher/lower
+2026-02-04,Atlanta,200,Mexico,Fine Appearance,40.0,,,,,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",occasional higher/lower
+2026-02-04,Atlanta,200,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",occasional lower
+2026-02-04,Atlanta,200,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",
+2026-02-04,Atlanta,200,Colombia,Fine Appearance,,,,,,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",insufficient to quote
+2026-02-04,Atlanta,230,Mexico,Fine Appearance,40.0,,,,,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",occasional lower
+2026-02-04,Atlanta,230,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",occasional lower
+2026-02-04,Atlanta,230,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,"MARKET COLOMBIA SLIGHTLY HIGHER, MEXICO ABOUT STEADY",
+2026-02-05,Atlanta,110,Mexico,Fair Quality,36.0,37.0,36.5,,37.0,MARKET ABOUT STEADY,
+2026-02-05,Atlanta,110,Mexico,Fine Appearance,46.0,,,,,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-05,Atlanta,150,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-05,Atlanta,150,Mexico,Fine Appearance,39.0,40.0,,,40.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-05,Atlanta,150,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-05,Atlanta,175,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET ABOUT STEADY,occasional lower
+2026-02-05,Atlanta,175,Mexico,Fine Appearance,39.0,40.0,,,40.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-05,Atlanta,175,Mexico,Fair Quality,26.0,28.0,,,28.0,MARKET ABOUT STEADY,
+2026-02-05,Atlanta,175,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-05,Atlanta,200,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET ABOUT STEADY,occasional lower
+2026-02-05,Atlanta,200,Mexico,Fine Appearance,40.0,,,,,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-05,Atlanta,200,Colombia,Fine Appearance,,,,,,MARKET ABOUT STEADY,insufficient to quote
+2026-02-05,Atlanta,200,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,MARKET ABOUT STEADY,
+2026-02-05,Atlanta,230,Mexico,Fine Appearance,40.0,,,,,MARKET ABOUT STEADY,occasional lower
+2026-02-05,Atlanta,230,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET ABOUT STEADY,occasional lower
+2026-02-05,Atlanta,230,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,MARKET ABOUT STEADY,
+2026-02-06,Atlanta,110,Mexico,Fine Appearance,46.0,,,,,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",occasional higher/lower
+2026-02-06,Atlanta,110,Mexico,Fair Quality,36.0,37.0,36.5,,37.0,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",
+2026-02-06,Atlanta,150,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",occasional higher/lower
+2026-02-06,Atlanta,150,Mexico,Fine Appearance,39.0,40.0,,,40.0,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",occasional higher/lower
+2026-02-06,Atlanta,150,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",occasional higher/lower
+2026-02-06,Atlanta,175,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",occasional lower
+2026-02-06,Atlanta,175,Mexico,Fine Appearance,39.0,40.0,,,40.0,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",occasional higher/lower
+2026-02-06,Atlanta,175,Mexico,Fair Quality,26.0,28.0,,,28.0,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",
+2026-02-06,Atlanta,175,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",occasional higher/lower
+2026-02-06,Atlanta,200,Mexico,Fine Appearance,40.0,,,,,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",occasional higher/lower
+2026-02-06,Atlanta,200,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",occasional lower
+2026-02-06,Atlanta,200,Colombia,BASE,,,,,,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",insufficient to quote
+2026-02-06,Atlanta,230,Mexico,Fine Appearance,40.0,,,,,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",occasional lower
+2026-02-06,Atlanta,230,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",occasional lower
+2026-02-06,Atlanta,230,Colombia,BASE,,,,,,"MARKET COLOMBIA ABOUT STEADY, MEXICO STEADY",insufficient to quote
+2026-02-09,Atlanta,110,Mexico,Fair Quality,36.0,37.0,36.5,,37.0,MARKET ABOUT STEADY,
+2026-02-09,Atlanta,110,Mexico,Fine Appearance,46.0,,,,,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-09,Atlanta,150,Mexico,Fine Appearance,39.0,40.0,,,40.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-09,Atlanta,150,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-09,Atlanta,150,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-09,Atlanta,175,Mexico,Fine Appearance,39.0,40.0,,,40.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-09,Atlanta,175,Mexico,Fair Quality,26.0,28.0,,,28.0,MARKET ABOUT STEADY,
+2026-02-09,Atlanta,175,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET ABOUT STEADY,occasional lower
+2026-02-09,Atlanta,175,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-09,Atlanta,200,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET ABOUT STEADY,occasional lower
+2026-02-09,Atlanta,200,Mexico,Fine Appearance,40.0,,,,,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-09,Atlanta,200,Colombia,BASE,,,,,,MARKET ABOUT STEADY,insufficient to quote
+2026-02-09,Atlanta,230,Mexico,Fine Appearance,40.0,,,,,MARKET ABOUT STEADY,occasional lower
+2026-02-09,Atlanta,230,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET ABOUT STEADY,occasional lower
+2026-02-09,Atlanta,230,Colombia,BASE,,,,,,MARKET ABOUT STEADY,insufficient to quote
+2026-02-10,Atlanta,110,Mexico,Fair Quality,36.0,37.0,36.5,,37.0,MARKET STEADY,
+2026-02-10,Atlanta,110,Mexico,Fine Appearance,46.0,,,,,MARKET STEADY,occasional higher/lower
+2026-02-10,Atlanta,150,Mexico,Fine Appearance,39.0,40.0,,,40.0,MARKET STEADY,occasional higher/lower
+2026-02-10,Atlanta,150,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET STEADY,occasional higher/lower
+2026-02-10,Atlanta,150,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,MARKET STEADY,occasional higher/lower
+2026-02-10,Atlanta,175,Mexico,Fair Quality,26.0,28.0,,,28.0,MARKET STEADY,
+2026-02-10,Atlanta,175,Mexico,Fine Appearance,39.0,40.0,,,40.0,MARKET STEADY,occasional higher/lower
+2026-02-10,Atlanta,175,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET STEADY,occasional lower
+2026-02-10,Atlanta,175,Colombia,BASE,30.0,32.0,30.0,31.0,31.0,MARKET STEADY,occasional higher/lower
+2026-02-10,Atlanta,200,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET STEADY,occasional lower
+2026-02-10,Atlanta,200,Mexico,Fine Appearance,40.0,,,,,MARKET STEADY,occasional higher/lower
+2026-02-10,Atlanta,200,Colombia,BASE,,,,,,MARKET STEADY,insufficient to quote
+2026-02-10,Atlanta,230,Mexico,Fine Appearance,40.0,,,,,MARKET STEADY,occasional lower
+2026-02-10,Atlanta,230,Mexico,BASE,30.0,33.0,31.0,32.0,32.0,MARKET STEADY,occasional lower
+2026-02-10,Atlanta,230,Colombia,BASE,,,,,,MARKET STEADY,insufficient to quote
+2026-02-11,Atlanta,110,Mexico,Fine Appearance,46.0,,,,,"MARKET 40-LB CARTONS SLIGHTLY HIGHER, 10-LB CARTONS SLIGHTLY LOWER",occasional higher/lower
+2026-02-11,Atlanta,110,Mexico,Fair Quality,37.0,38.0,,,38.0,"MARKET 40-LB CARTONS SLIGHTLY HIGHER, 10-LB CARTONS SLIGHTLY LOWER",
+2026-02-11,Atlanta,150,Mexico,BASE,35.0,38.0,36.0,37.0,37.0,"MARKET 40-LB CARTONS SLIGHTLY HIGHER, 10-LB CARTONS SLIGHTLY LOWER",occasional higher/lower
+2026-02-11,Atlanta,150,Mexico,Fine Appearance,40.0,42.0,42.0,,42.0,"MARKET 40-LB CARTONS SLIGHTLY HIGHER, 10-LB CARTONS SLIGHTLY LOWER",occasional higher/lower
+2026-02-11,Atlanta,150,Colombia,BASE,,,,,,"MARKET 40-LB CARTONS SLIGHTLY HIGHER, 10-LB CARTONS SLIGHTLY LOWER",insufficient to quote
+2026-02-11,Atlanta,175,Mexico,Fine Appearance,40.0,42.0,42.0,,42.0,"MARKET 40-LB CARTONS SLIGHTLY HIGHER, 10-LB CARTONS SLIGHTLY LOWER",occasional higher/lower
+2026-02-11,Atlanta,175,Mexico,Fair Quality,28.0,30.0,,,30.0,"MARKET 40-LB CARTONS SLIGHTLY HIGHER, 10-LB CARTONS SLIGHTLY LOWER",
+2026-02-11,Atlanta,175,Mexico,BASE,35.0,38.0,36.0,37.0,37.0,"MARKET 40-LB CARTONS SLIGHTLY HIGHER, 10-LB CARTONS SLIGHTLY LOWER",occasional lower
+2026-02-11,Atlanta,200,Mexico,Fine Appearance,40.0,,,,,"MARKET 40-LB CARTONS SLIGHTLY HIGHER, 10-LB CARTONS SLIGHTLY LOWER",occasional higher/lower
+2026-02-11,Atlanta,200,Mexico,BASE,35.0,38.0,36.0,37.0,37.0,"MARKET 40-LB CARTONS SLIGHTLY HIGHER, 10-LB CARTONS SLIGHTLY LOWER",occasional lower
+2026-02-11,Atlanta,230,Mexico,Fine Appearance,40.0,,,,,"MARKET 40-LB CARTONS SLIGHTLY HIGHER, 10-LB CARTONS SLIGHTLY LOWER",occasional lower
+2026-02-11,Atlanta,230,Mexico,BASE,35.0,38.0,36.0,37.0,37.0,"MARKET 40-LB CARTONS SLIGHTLY HIGHER, 10-LB CARTONS SLIGHTLY LOWER",occasional lower
+2026-02-12,Atlanta,110,Mexico,Fine Appearance,46.0,,,,,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-12,Atlanta,110,Mexico,Fair Quality,37.0,38.0,,,38.0,MARKET ABOUT STEADY,
+2026-02-12,Atlanta,150,Mexico,BASE,35.0,38.0,36.0,37.0,37.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-12,Atlanta,150,Mexico,Fine Appearance,40.0,42.0,42.0,,42.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-12,Atlanta,150,Colombia,BASE,,,,,,MARKET ABOUT STEADY,insufficient to quote
+2026-02-12,Atlanta,175,Mexico,Fine Appearance,40.0,42.0,42.0,,42.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-12,Atlanta,175,Mexico,Fair Quality,28.0,30.0,,,30.0,MARKET ABOUT STEADY,
+2026-02-12,Atlanta,175,Mexico,BASE,35.0,38.0,36.0,37.0,37.0,MARKET ABOUT STEADY,occasional lower
+2026-02-12,Atlanta,200,Mexico,Fine Appearance,40.0,,,,,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-12,Atlanta,200,Mexico,BASE,35.0,38.0,36.0,37.0,37.0,MARKET ABOUT STEADY,occasional lower
+2026-02-12,Atlanta,230,Mexico,BASE,35.0,38.0,36.0,37.0,37.0,MARKET ABOUT STEADY,occasional lower
+2026-02-12,Atlanta,230,Mexico,Fine Appearance,40.0,,,,,MARKET ABOUT STEADY,occasional lower
+2026-02-13,Atlanta,110,Mexico,BASE,36.0,38.0,37.0,38.0,38.0,MARKET FIRM,
+2026-02-13,Atlanta,110,Mexico,Fine Appearance,46.0,,,,,MARKET FIRM,occasional higher/lower
+2026-02-13,Atlanta,150,Mexico,BASE,36.0,38.0,37.0,38.0,38.0,MARKET FIRM,occasional higher/lower
+2026-02-13,Atlanta,150,Mexico,Fine Appearance,42.0,44.0,43.0,44.0,44.0,MARKET FIRM,occasional higher/lower
+2026-02-13,Atlanta,175,Mexico,Fair Quality,28.0,30.0,,,30.0,MARKET FIRM,
+2026-02-13,Atlanta,175,Mexico,Fine Appearance,42.0,44.0,43.0,44.0,44.0,MARKET FIRM,occasional higher/lower
+2026-02-13,Atlanta,175,Mexico,BASE,36.0,38.0,37.0,38.0,38.0,MARKET FIRM,occasional lower
+2026-02-13,Atlanta,200,Mexico,BASE,39.0,42.0,40.0,41.0,41.0,MARKET FIRM,occasional lower
+2026-02-13,Atlanta,200,Mexico,Fine Appearance,44.0,,,,,MARKET FIRM,occasional higher/lower
+2026-02-13,Atlanta,230,Mexico,Fine Appearance,44.0,,,,,MARKET FIRM,occasional lower
+2026-02-13,Atlanta,230,Mexico,BASE,36.0,38.0,37.0,38.0,38.0,MARKET FIRM,occasional lower
+2026-02-17,Atlanta,110,Mexico,BASE,46.0,,,,,,occasional higher/lower
+2026-02-17,Atlanta,150,Mexico,Fair Quality,40.0,42.0,,,42.0,,
+2026-02-17,Atlanta,150,Mexico,Fine Appearance,50.0,51.0,,,51.0,,occasional higher/lower
+2026-02-17,Atlanta,150,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,,occasional higher/lower
+2026-02-17,Atlanta,175,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,,occasional lower
+2026-02-17,Atlanta,175,Mexico,Fair Quality,40.0,42.0,,,42.0,,
+2026-02-17,Atlanta,175,Mexico,Fine Appearance,50.0,52.0,50.0,51.0,51.0,,occasional higher/lower
+2026-02-17,Atlanta,200,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,,occasional lower
+2026-02-17,Atlanta,200,Mexico,Fine Appearance,50.0,,,,,,occasional higher/lower
+2026-02-17,Atlanta,230,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,,occasional lower
+2026-02-17,Atlanta,230,Mexico,Fine Appearance,47.0,50.0,48.0,49.0,49.0,,occasional lower
+2026-02-18,Atlanta,110,Mexico,BASE,46.0,,,,,MARKET STEADY,occasional higher/lower
+2026-02-18,Atlanta,150,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,MARKET STEADY,occasional higher/lower
+2026-02-18,Atlanta,150,Mexico,Fine Appearance,50.0,51.0,,,51.0,MARKET STEADY,occasional higher/lower
+2026-02-18,Atlanta,150,Mexico,Fair Quality,40.0,42.0,,,42.0,MARKET STEADY,
+2026-02-18,Atlanta,175,Mexico,Fair Quality,40.0,42.0,,,42.0,MARKET STEADY,
+2026-02-18,Atlanta,175,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,MARKET STEADY,occasional lower
+2026-02-18,Atlanta,175,Mexico,Fine Appearance,50.0,52.0,50.0,51.0,51.0,MARKET STEADY,occasional higher/lower
+2026-02-18,Atlanta,200,Mexico,Fine Appearance,50.0,,,,,MARKET STEADY,occasional higher/lower
+2026-02-18,Atlanta,200,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,MARKET STEADY,occasional lower
+2026-02-18,Atlanta,230,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,MARKET STEADY,occasional lower
+2026-02-18,Atlanta,230,Mexico,Fine Appearance,47.0,50.0,48.0,49.0,49.0,MARKET STEADY,occasional lower
+2026-02-19,Atlanta,110,Mexico,BASE,46.0,,,,,MARKET STEADY,occasional higher/lower
+2026-02-19,Atlanta,150,Mexico,Fine Appearance,50.0,51.0,,,51.0,MARKET STEADY,occasional higher/lower
+2026-02-19,Atlanta,150,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,MARKET STEADY,occasional higher/lower
+2026-02-19,Atlanta,150,Mexico,Fair Quality,40.0,42.0,,,42.0,MARKET STEADY,
+2026-02-19,Atlanta,175,Mexico,Fine Appearance,50.0,52.0,50.0,51.0,51.0,MARKET STEADY,occasional higher/lower
+2026-02-19,Atlanta,175,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,MARKET STEADY,occasional lower
+2026-02-19,Atlanta,175,Mexico,Fair Quality,40.0,42.0,,,42.0,MARKET STEADY,
+2026-02-19,Atlanta,200,Mexico,Fine Appearance,50.0,,,,,MARKET STEADY,occasional higher/lower
+2026-02-19,Atlanta,200,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,MARKET STEADY,occasional lower
+2026-02-19,Atlanta,230,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,MARKET STEADY,occasional lower
+2026-02-19,Atlanta,230,Mexico,Fine Appearance,47.0,50.0,48.0,49.0,49.0,MARKET STEADY,occasional lower
+2026-02-20,Atlanta,110,Mexico,BASE,46.0,,,,,MARKET FIRM,occasional higher/lower
+2026-02-20,Atlanta,150,Mexico,Fine Appearance,50.0,51.0,,,51.0,MARKET FIRM,occasional higher/lower
+2026-02-20,Atlanta,150,Mexico,BASE,47.0,48.0,48.0,48.0,48.0,MARKET FIRM,occasional higher/lower
+2026-02-20,Atlanta,150,Mexico,Fair Quality,42.0,44.0,,,44.0,MARKET FIRM,
+2026-02-20,Atlanta,150,Colombia,BASE,42.0,,,,,MARKET FIRM,occasional higher/lower
+2026-02-20,Atlanta,175,Mexico,BASE,47.0,48.0,48.0,48.0,48.0,MARKET FIRM,occasional lower
+2026-02-20,Atlanta,175,Mexico,Fine Appearance,52.0,54.0,53.0,54.0,54.0,MARKET FIRM,occasional higher/lower
+2026-02-20,Atlanta,175,Mexico,Fair Quality,42.0,44.0,,,44.0,MARKET FIRM,
+2026-02-20,Atlanta,175,Colombia,BASE,42.0,,,,,MARKET FIRM,occasional higher/lower
+2026-02-20,Atlanta,200,Mexico,Fair Quality,42.0,44.0,,,44.0,MARKET FIRM,
+2026-02-20,Atlanta,200,Mexico,Fine Appearance,50.0,,,,,MARKET FIRM,occasional higher/lower
+2026-02-20,Atlanta,200,Mexico,BASE,47.0,48.0,48.0,48.0,48.0,MARKET FIRM,occasional lower
+2026-02-20,Atlanta,200,Colombia,BASE,42.0,,,,,MARKET FIRM,occasional higher/lower
+2026-02-20,Atlanta,230,Mexico,BASE,47.0,48.0,48.0,48.0,48.0,MARKET FIRM,occasional lower
+2026-02-20,Atlanta,230,Mexico,Fine Appearance,50.0,51.0,,,51.0,MARKET FIRM,occasional higher
+2026-02-20,Atlanta,230,Colombia,BASE,42.0,,,,,MARKET FIRM,
+2026-02-23,Atlanta,110,Mexico,BASE,46.0,,,,,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-02-23,Atlanta,150,Mexico,BASE,47.0,48.0,48.0,48.0,48.0,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-02-23,Atlanta,150,Mexico,Fair Quality,42.0,44.0,,,44.0,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",
+2026-02-23,Atlanta,150,Mexico,Fine Appearance,53.0,54.0,,,54.0,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-02-23,Atlanta,175,Mexico,BASE,47.0,48.0,48.0,48.0,48.0,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional lower
+2026-02-23,Atlanta,175,Mexico,Fair Quality,42.0,44.0,,,44.0,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",
+2026-02-23,Atlanta,175,Mexico,Fine Appearance,53.0,54.0,,,54.0,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-02-23,Atlanta,175,Colombia,BASE,,,,,,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",insufficient to quote
+2026-02-23,Atlanta,200,Mexico,Fair Quality,42.0,44.0,,,44.0,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",
+2026-02-23,Atlanta,200,Mexico,Fine Appearance,54.0,,,,,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-02-23,Atlanta,200,Mexico,BASE,47.0,48.0,48.0,48.0,48.0,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional lower
+2026-02-23,Atlanta,230,Mexico,BASE,47.0,48.0,48.0,48.0,48.0,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional lower
+2026-02-23,Atlanta,230,Mexico,Fine Appearance,53.0,54.0,,,54.0,"MARKET 40-LB CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher
+2026-02-24,Atlanta,110,Mexico,BASE,46.0,,,,,"MARKET MEXICO 40-LB CARTONS HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-02-24,Atlanta,150,Mexico,BASE,54.0,57.0,55.0,56.0,56.0,"MARKET MEXICO 40-LB CARTONS HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-02-24,Atlanta,150,Mexico,Fine Appearance,59.0,60.0,,,60.0,"MARKET MEXICO 40-LB CARTONS HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-02-24,Atlanta,150,Mexico,Fair Quality,48.0,49.0,,,49.0,"MARKET MEXICO 40-LB CARTONS HIGHER, OTHERS ABOUT STEADY",
+2026-02-24,Atlanta,175,Mexico,BASE,54.0,57.0,55.0,56.0,56.0,"MARKET MEXICO 40-LB CARTONS HIGHER, OTHERS ABOUT STEADY",occasional lower
+2026-02-24,Atlanta,175,Mexico,Fair Quality,48.0,49.0,,,49.0,"MARKET MEXICO 40-LB CARTONS HIGHER, OTHERS ABOUT STEADY",
+2026-02-24,Atlanta,175,Mexico,Fine Appearance,60.0,61.0,,,61.0,"MARKET MEXICO 40-LB CARTONS HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-02-24,Atlanta,200,Mexico,BASE,54.0,57.0,55.0,56.0,56.0,"MARKET MEXICO 40-LB CARTONS HIGHER, OTHERS ABOUT STEADY",occasional lower
+2026-02-24,Atlanta,200,Mexico,Fine Appearance,60.0,61.0,,,61.0,"MARKET MEXICO 40-LB CARTONS HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-02-24,Atlanta,200,Mexico,Fair Quality,48.0,49.0,,,49.0,"MARKET MEXICO 40-LB CARTONS HIGHER, OTHERS ABOUT STEADY",
+2026-02-24,Atlanta,230,Mexico,BASE,54.0,,,,,"MARKET MEXICO 40-LB CARTONS HIGHER, OTHERS ABOUT STEADY",occasional lower
+2026-02-24,Atlanta,230,Mexico,Fine Appearance,58.0,60.0,,,60.0,"MARKET MEXICO 40-LB CARTONS HIGHER, OTHERS ABOUT STEADY",occasional higher
+2026-02-25,Atlanta,110,Mexico,BASE,46.0,,,,,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-25,Atlanta,150,Mexico,Fair Quality,50.0,52.0,,,52.0,MARKET ABOUT STEADY,
+2026-02-25,Atlanta,150,Mexico,Fine Appearance,57.0,60.0,58.0,59.0,59.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-25,Atlanta,150,Mexico,BASE,54.0,57.0,55.0,56.0,56.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-25,Atlanta,150,Colombia,BASE,49.0,,,,,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-25,Atlanta,175,Mexico,Fine Appearance,60.0,61.0,,,61.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-25,Atlanta,175,Mexico,Fair Quality,50.0,52.0,,,52.0,MARKET ABOUT STEADY,
+2026-02-25,Atlanta,175,Mexico,BASE,54.0,57.0,55.0,56.0,56.0,MARKET ABOUT STEADY,occasional lower
+2026-02-25,Atlanta,175,Colombia,BASE,49.0,,,,,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-25,Atlanta,200,Mexico,Fine Appearance,60.0,61.0,,,61.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-25,Atlanta,200,Mexico,Fair Quality,50.0,52.0,,,52.0,MARKET ABOUT STEADY,
+2026-02-25,Atlanta,200,Mexico,BASE,54.0,57.0,55.0,56.0,56.0,MARKET ABOUT STEADY,occasional lower
+2026-02-25,Atlanta,200,Colombia,BASE,49.0,,,,,MARKET ABOUT STEADY,occasional higher/lower
+2026-02-25,Atlanta,230,Mexico,Fine Appearance,58.0,60.0,,,60.0,MARKET ABOUT STEADY,occasional higher
+2026-02-25,Atlanta,230,Mexico,BASE,54.0,,,,,MARKET ABOUT STEADY,occasional lower
+2026-02-25,Atlanta,230,Colombia,BASE,49.0,,,,,MARKET ABOUT STEADY,
+2026-02-26,Atlanta,110,Mexico,BASE,46.0,,,,,MARKET STEADY,occasional higher/lower
+2026-02-26,Atlanta,150,Mexico,Fair Quality,50.0,52.0,,,52.0,MARKET STEADY,
+2026-02-26,Atlanta,150,Mexico,BASE,54.0,57.0,55.0,56.0,56.0,MARKET STEADY,occasional higher/lower
+2026-02-26,Atlanta,150,Mexico,Fine Appearance,57.0,60.0,58.0,59.0,59.0,MARKET STEADY,occasional higher/lower
+2026-02-26,Atlanta,150,Colombia,BASE,49.0,,,,,MARKET STEADY,occasional higher/lower
+2026-02-26,Atlanta,175,Mexico,BASE,54.0,57.0,55.0,56.0,56.0,MARKET STEADY,occasional lower
+2026-02-26,Atlanta,175,Mexico,Fine Appearance,60.0,61.0,,,61.0,MARKET STEADY,occasional higher/lower
+2026-02-26,Atlanta,175,Mexico,Fair Quality,50.0,52.0,,,52.0,MARKET STEADY,
+2026-02-26,Atlanta,175,Colombia,BASE,49.0,,,,,MARKET STEADY,occasional higher/lower
+2026-02-26,Atlanta,200,Mexico,Fair Quality,50.0,52.0,,,52.0,MARKET STEADY,
+2026-02-26,Atlanta,200,Mexico,BASE,54.0,57.0,55.0,56.0,56.0,MARKET STEADY,occasional lower
+2026-02-26,Atlanta,200,Mexico,Fine Appearance,60.0,61.0,,,61.0,MARKET STEADY,occasional higher/lower
+2026-02-26,Atlanta,200,Colombia,BASE,49.0,,,,,MARKET STEADY,occasional higher/lower
+2026-02-26,Atlanta,230,Mexico,BASE,54.0,,,,,MARKET STEADY,occasional lower
+2026-02-26,Atlanta,230,Mexico,Fine Appearance,58.0,60.0,,,60.0,MARKET STEADY,occasional higher
+2026-02-26,Atlanta,230,Colombia,BASE,49.0,,,,,MARKET STEADY,
+2026-02-27,Atlanta,110,Mexico,BASE,46.0,,,,,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",occasional higher/lower
+2026-02-27,Atlanta,150,Mexico,BASE,54.0,57.0,55.0,56.0,56.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",occasional higher/lower
+2026-02-27,Atlanta,150,Mexico,Fine Appearance,57.0,60.0,58.0,59.0,59.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",occasional higher/lower
+2026-02-27,Atlanta,150,Mexico,Fair Quality,50.0,52.0,,,52.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",
+2026-02-27,Atlanta,150,Colombia,BASE,48.0,48.0,,,48.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",occasional higher/lower
+2026-02-27,Atlanta,175,Mexico,Fine Appearance,60.0,61.0,,,61.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",occasional higher/lower
+2026-02-27,Atlanta,175,Mexico,BASE,54.0,57.0,55.0,56.0,56.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",occasional lower
+2026-02-27,Atlanta,175,Mexico,Fair Quality,50.0,52.0,,,52.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",
+2026-02-27,Atlanta,175,Colombia,BASE,48.0,48.0,,,48.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",occasional higher/lower
+2026-02-27,Atlanta,200,Mexico,Fair Quality,50.0,52.0,,,52.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",
+2026-02-27,Atlanta,200,Mexico,Fine Appearance,60.0,61.0,,,61.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",occasional higher/lower
+2026-02-27,Atlanta,200,Mexico,BASE,54.0,57.0,55.0,56.0,56.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",occasional lower
+2026-02-27,Atlanta,200,Colombia,BASE,48.0,48.0,,,48.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",occasional higher/lower
+2026-02-27,Atlanta,230,Mexico,Fine Appearance,58.0,60.0,,,60.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",occasional higher
+2026-02-27,Atlanta,230,Mexico,BASE,54.0,,,,,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",occasional lower
+2026-02-27,Atlanta,230,Colombia,BASE,48.0,48.0,,,48.0,"MARKET COLOMBIA SLIGHTLY LOWER, MEXICO STEADY",
+2026-03-02,Atlanta,110,Mexico,BASE,46.0,46.0,,,46.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-02,Atlanta,150,Mexico,Fine Appearance,58.0,61.0,59.0,60.0,60.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-02,Atlanta,150,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET ABOUT STEADY,
+2026-03-02,Atlanta,150,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-02,Atlanta,150,Colombia,BASE,,,,,,MARKET ABOUT STEADY,insufficient to quote
+2026-03-02,Atlanta,175,Mexico,Fine Appearance,60.0,61.0,61.0,,61.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-02,Atlanta,175,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET ABOUT STEADY,
+2026-03-02,Atlanta,175,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET ABOUT STEADY,occasional lower
+2026-03-02,Atlanta,200,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET ABOUT STEADY,occasional lower
+2026-03-02,Atlanta,200,Mexico,Fine Appearance,60.0,61.0,61.0,,61.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-02,Atlanta,200,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET ABOUT STEADY,
+2026-03-02,Atlanta,230,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET ABOUT STEADY,occasional lower
+2026-03-02,Atlanta,230,Mexico,Fine Appearance,56.0,57.0,,,57.0,MARKET ABOUT STEADY,occasional higher
+2026-03-03,Atlanta,110,Mexico,BASE,46.0,46.0,,,46.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-03,Atlanta,150,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET ABOUT STEADY,
+2026-03-03,Atlanta,150,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-03,Atlanta,150,Mexico,Fine Appearance,58.0,61.0,59.0,60.0,60.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-03,Atlanta,175,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET ABOUT STEADY,
+2026-03-03,Atlanta,175,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET ABOUT STEADY,occasional lower
+2026-03-03,Atlanta,175,Mexico,Fine Appearance,60.0,61.0,61.0,,61.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-03,Atlanta,200,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET ABOUT STEADY,occasional lower
+2026-03-03,Atlanta,200,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET ABOUT STEADY,
+2026-03-03,Atlanta,200,Mexico,Fine Appearance,60.0,61.0,61.0,,61.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-03,Atlanta,230,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET ABOUT STEADY,occasional lower
+2026-03-03,Atlanta,230,Mexico,Fine Appearance,56.0,57.0,,,57.0,MARKET ABOUT STEADY,occasional higher
+2026-03-04,Atlanta,110,Mexico,BASE,46.0,46.0,,,46.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-04,Atlanta,150,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET ABOUT STEADY,
+2026-03-04,Atlanta,150,Mexico,Fine Appearance,58.0,61.0,59.0,60.0,60.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-04,Atlanta,150,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET ABOUT STEADY,few 55.00 occasional higher/lower
+2026-03-04,Atlanta,175,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET ABOUT STEADY,
+2026-03-04,Atlanta,175,Mexico,Fine Appearance,60.0,61.0,61.0,,61.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-04,Atlanta,175,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET ABOUT STEADY,few 55.00 occasional lower
+2026-03-04,Atlanta,200,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET ABOUT STEADY,occasional lower
+2026-03-04,Atlanta,200,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET ABOUT STEADY,
+2026-03-04,Atlanta,200,Mexico,Fine Appearance,60.0,61.0,61.0,,61.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-04,Atlanta,230,Mexico,Fine Appearance,56.0,57.0,,,57.0,MARKET ABOUT STEADY,occasional higher
+2026-03-04,Atlanta,230,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET ABOUT STEADY,occasional lower
+2026-03-05,Atlanta,110,Mexico,BASE,46.0,46.0,,,46.0,MARKET STEADY,occasional higher/lower
+2026-03-05,Atlanta,150,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET STEADY,few 55.00 occasional higher/lower
+2026-03-05,Atlanta,150,Mexico,Fine Appearance,58.0,61.0,59.0,60.0,60.0,MARKET STEADY,occasional higher/lower
+2026-03-05,Atlanta,150,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET STEADY,
+2026-03-05,Atlanta,175,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET STEADY,
+2026-03-05,Atlanta,175,Mexico,Fine Appearance,60.0,61.0,61.0,,61.0,MARKET STEADY,occasional higher/lower
+2026-03-05,Atlanta,175,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET STEADY,few 55.00 occasional lower
+2026-03-05,Atlanta,200,Mexico,Fine Appearance,60.0,61.0,61.0,,61.0,MARKET STEADY,occasional higher/lower
+2026-03-05,Atlanta,200,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET STEADY,
+2026-03-05,Atlanta,200,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET STEADY,occasional lower
+2026-03-05,Atlanta,230,Mexico,Fine Appearance,56.0,57.0,,,57.0,MARKET STEADY,occasional higher
+2026-03-05,Atlanta,230,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET STEADY,occasional lower
+2026-03-06,Atlanta,110,Mexico,BASE,46.0,46.0,,,46.0,MARKET STEADY,occasional higher/lower
+2026-03-06,Atlanta,150,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET STEADY,few 55.00 occasional higher/lower
+2026-03-06,Atlanta,150,Mexico,Fine Appearance,58.0,61.0,59.0,60.0,60.0,MARKET STEADY,occasional higher/lower
+2026-03-06,Atlanta,150,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET STEADY,
+2026-03-06,Atlanta,175,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET STEADY,few 55.00 occasional lower
+2026-03-06,Atlanta,175,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET STEADY,
+2026-03-06,Atlanta,175,Mexico,Fine Appearance,60.0,61.0,61.0,,61.0,MARKET STEADY,occasional higher/lower
+2026-03-06,Atlanta,200,Mexico,Fair Quality,46.0,48.0,,,48.0,MARKET STEADY,
+2026-03-06,Atlanta,200,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET STEADY,occasional lower
+2026-03-06,Atlanta,200,Mexico,Fine Appearance,60.0,61.0,61.0,,61.0,MARKET STEADY,occasional higher/lower
+2026-03-06,Atlanta,230,Mexico,BASE,51.0,54.0,52.0,53.0,53.0,MARKET STEADY,occasional lower
+2026-03-06,Atlanta,230,Mexico,Fine Appearance,56.0,57.0,,,57.0,MARKET STEADY,occasional higher
+2026-03-09,Atlanta,110,Mexico,Fair Quality,46.0,46.0,,,46.0,MARKET FIRM,
+2026-03-09,Atlanta,150,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET FIRM,occasional higher/lower
+2026-03-09,Atlanta,150,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET FIRM,few lots 56.00-57.00 occasional higher/lower
+2026-03-09,Atlanta,150,Mexico,Fair Quality,48.0,50.0,,,50.0,MARKET FIRM,
+2026-03-09,Atlanta,175,Mexico,Fair Quality,48.0,50.0,,,50.0,MARKET FIRM,
+2026-03-09,Atlanta,175,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET FIRM,occasional higher/lower
+2026-03-09,Atlanta,175,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET FIRM,few lots 56.00-57.00 occasional lower
+2026-03-09,Atlanta,200,Mexico,Fair Quality,48.0,50.0,,,50.0,MARKET FIRM,
+2026-03-09,Atlanta,200,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET FIRM,few lots 56.00-57.00 occasional lower
+2026-03-09,Atlanta,200,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET FIRM,occasional higher/lower
+2026-03-09,Atlanta,230,Mexico,BASE,58.0,61.0,59.0,60.0,60.0,MARKET FIRM,occasional lower
+2026-03-09,Atlanta,230,Mexico,Fine Appearance,46.0,48.0,,,48.0,MARKET FIRM,poorer quality and condition lower
+2026-03-09,Atlanta,230,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET FIRM,occasional higher
+2026-03-10,Atlanta,110,Mexico,Fair Quality,46.0,46.0,,,46.0,MARKET ABOUT STEADY,
+2026-03-10,Atlanta,150,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,few lots 56.00-57.00 occasional higher/lower
+2026-03-10,Atlanta,150,Mexico,Fair Quality,48.0,50.0,,,50.0,MARKET ABOUT STEADY,
+2026-03-10,Atlanta,150,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-10,Atlanta,175,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-10,Atlanta,175,Mexico,Fair Quality,48.0,50.0,,,50.0,MARKET ABOUT STEADY,
+2026-03-10,Atlanta,175,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,few lots 56.00-57.00 occasional lower
+2026-03-10,Atlanta,200,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-10,Atlanta,200,Mexico,Fair Quality,48.0,50.0,,,50.0,MARKET ABOUT STEADY,
+2026-03-10,Atlanta,200,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,few lots 56.00-57.00 occasional lower
+2026-03-10,Atlanta,230,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET ABOUT STEADY,occasional higher
+2026-03-10,Atlanta,230,Mexico,BASE,58.0,61.0,59.0,60.0,60.0,MARKET ABOUT STEADY,occasional lower
+2026-03-10,Atlanta,230,Mexico,Fine Appearance,46.0,48.0,,,48.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-11,Atlanta,110,Mexico,Fair Quality,46.0,46.0,,,46.0,MARKET STEADY,
+2026-03-11,Atlanta,150,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET STEADY,few lots 56.00-57.00 occasional higher/lower
+2026-03-11,Atlanta,150,Mexico,Fair Quality,48.0,50.0,,,50.0,MARKET STEADY,
+2026-03-11,Atlanta,150,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET STEADY,occasional higher/lower
+2026-03-11,Atlanta,175,Mexico,Fair Quality,48.0,50.0,,,50.0,MARKET STEADY,
+2026-03-11,Atlanta,175,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET STEADY,few lots 56.00-57.00 occasional lower
+2026-03-11,Atlanta,175,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET STEADY,occasional higher/lower
+2026-03-11,Atlanta,200,Mexico,Fair Quality,48.0,50.0,,,50.0,MARKET STEADY,
+2026-03-11,Atlanta,200,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET STEADY,few lots 56.00-57.00 occasional lower
+2026-03-11,Atlanta,200,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET STEADY,occasional higher/lower
+2026-03-11,Atlanta,230,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET STEADY,occasional higher
+2026-03-11,Atlanta,230,Mexico,Fine Appearance,46.0,48.0,,,48.0,MARKET STEADY,poorer quality and condition lower
+2026-03-11,Atlanta,230,Mexico,BASE,58.0,61.0,59.0,60.0,60.0,MARKET STEADY,occasional lower
+2026-03-12,Atlanta,110,Mexico,BASE,60.0,60.0,,,60.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",
+2026-03-12,Atlanta,150,Mexico,Fair Quality,57.0,60.0,,,60.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",
+2026-03-12,Atlanta,150,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",occasional higher/lower
+2026-03-12,Atlanta,150,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",occasional higher/lower
+2026-03-12,Atlanta,175,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",occasional higher/lower
+2026-03-12,Atlanta,175,Mexico,Fair Quality,57.0,60.0,,,60.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",
+2026-03-12,Atlanta,175,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",few lots 56.00-57.00 occasional lower
+2026-03-12,Atlanta,200,Mexico,Fair Quality,57.0,60.0,,,60.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",
+2026-03-12,Atlanta,200,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",occasional higher/lower
+2026-03-12,Atlanta,200,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",occasional lower
+2026-03-12,Atlanta,230,Mexico,Fair Quality,57.0,60.0,,,60.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",poorer quality and condition lower
+2026-03-12,Atlanta,230,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",occasional lower
+2026-03-12,Atlanta,230,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,"MARKET 40-POUND CARTONS FINE APPEARANCE STEADY, OTHERS SLIGHTLY HIGHER",occasional higher
+2026-03-13,Atlanta,110,Mexico,BASE,60.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-13,Atlanta,150,Mexico,Fair Quality,57.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-13,Atlanta,150,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-13,Atlanta,150,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-13,Atlanta,175,Mexico,Fair Quality,57.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-13,Atlanta,175,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-13,Atlanta,175,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,few lots 56.00-57.00 occasional lower
+2026-03-13,Atlanta,200,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,occasional lower
+2026-03-13,Atlanta,200,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-13,Atlanta,200,Mexico,Fair Quality,57.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-13,Atlanta,230,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,occasional lower
+2026-03-13,Atlanta,230,Mexico,Fair Quality,57.0,60.0,,,60.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-13,Atlanta,230,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET ABOUT STEADY,occasional higher
+2026-03-16,Atlanta,110,Mexico,BASE,60.0,60.0,,,60.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",
+2026-03-16,Atlanta,150,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-03-16,Atlanta,150,Mexico,Fair Quality,57.0,60.0,,,60.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",
+2026-03-16,Atlanta,150,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-03-16,Atlanta,150,Colombia,BASE,58.0,59.0,,,59.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-03-16,Atlanta,175,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-03-16,Atlanta,175,Mexico,Fair Quality,57.0,60.0,,,60.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",
+2026-03-16,Atlanta,175,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",few lots 56.00-57.00 occasional lower
+2026-03-16,Atlanta,175,Colombia,BASE,58.0,59.0,,,59.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-03-16,Atlanta,200,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional lower
+2026-03-16,Atlanta,200,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher/lower
+2026-03-16,Atlanta,200,Mexico,Fair Quality,57.0,60.0,,,60.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",
+2026-03-16,Atlanta,230,Mexico,Fair Quality,57.0,60.0,,,60.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",poorer quality and condition lower
+2026-03-16,Atlanta,230,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional lower
+2026-03-16,Atlanta,230,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,"MARKET SEEDED TYPE SLIGHTLY HIGHER, SEEDLESS TYPE ABOUT STEADY",occasional higher
+2026-03-17,Atlanta,110,Mexico,BASE,60.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-17,Atlanta,150,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-17,Atlanta,150,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-17,Atlanta,150,Mexico,Fair Quality,57.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-17,Atlanta,150,Colombia,BASE,58.0,59.0,,,59.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-17,Atlanta,175,Mexico,Fair Quality,57.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-17,Atlanta,175,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,few lots 56.00-57.00 occasional lower
+2026-03-17,Atlanta,175,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-17,Atlanta,175,Colombia,BASE,58.0,59.0,,,59.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-17,Atlanta,200,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-17,Atlanta,200,Mexico,Fair Quality,57.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-17,Atlanta,200,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,occasional lower
+2026-03-17,Atlanta,230,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,occasional lower
+2026-03-17,Atlanta,230,Mexico,Fine Appearance,70.0,72.0,71.0,72.0,72.0,MARKET ABOUT STEADY,occasional higher
+2026-03-17,Atlanta,230,Mexico,Fair Quality,57.0,60.0,,,60.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-18,Atlanta,110,Mexico,BASE,60.0,60.0,,,60.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",
+2026-03-18,Atlanta,150,Mexico,Fine Appearance,72.0,75.0,73.0,74.0,74.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-03-18,Atlanta,150,Mexico,Fair Quality,57.0,60.0,,,60.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",
+2026-03-18,Atlanta,150,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-03-18,Atlanta,150,Colombia,BASE,58.0,59.0,,,59.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-03-18,Atlanta,175,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",few lots 56.00-57.00 occasional lower
+2026-03-18,Atlanta,175,Mexico,Fair Quality,57.0,60.0,,,60.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",
+2026-03-18,Atlanta,175,Mexico,Fine Appearance,72.0,75.0,73.0,74.0,74.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-03-18,Atlanta,175,Colombia,BASE,58.0,59.0,,,59.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-03-18,Atlanta,200,Mexico,Fair Quality,57.0,60.0,,,60.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",
+2026-03-18,Atlanta,200,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional lower
+2026-03-18,Atlanta,200,Mexico,Fine Appearance,72.0,75.0,73.0,74.0,74.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher/lower
+2026-03-18,Atlanta,230,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional lower
+2026-03-18,Atlanta,230,Mexico,Fine Appearance,72.0,75.0,73.0,74.0,74.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",occasional higher
+2026-03-18,Atlanta,230,Mexico,Fair Quality,57.0,60.0,,,60.0,"MARKET 40-POUND CARTONS FINE APPEARANCE SLIGHTLY HIGHER, OTHERS ABOUT STEADY",poorer quality and condition lower
+2026-03-19,Atlanta,110,Mexico,BASE,60.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-19,Atlanta,150,Mexico,Fair Quality,57.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-19,Atlanta,150,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-19,Atlanta,150,Mexico,Fine Appearance,72.0,75.0,73.0,74.0,74.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-19,Atlanta,150,Colombia,BASE,58.0,59.0,,,59.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-19,Atlanta,175,Mexico,Fine Appearance,72.0,75.0,73.0,74.0,74.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-19,Atlanta,175,Mexico,Fair Quality,57.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-19,Atlanta,175,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,few lots 56.00-57.00 occasional lower
+2026-03-19,Atlanta,175,Colombia,BASE,58.0,59.0,,,59.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-19,Atlanta,200,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,occasional lower
+2026-03-19,Atlanta,200,Mexico,Fine Appearance,72.0,75.0,73.0,74.0,74.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-19,Atlanta,200,Mexico,Fair Quality,57.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-19,Atlanta,230,Mexico,Fair Quality,57.0,60.0,,,60.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-19,Atlanta,230,Mexico,BASE,63.0,66.0,64.0,65.0,65.0,MARKET ABOUT STEADY,occasional lower
+2026-03-19,Atlanta,230,Mexico,Fine Appearance,72.0,75.0,73.0,74.0,74.0,MARKET ABOUT STEADY,occasional higher
+2026-03-20,Atlanta,110,Mexico,BASE,60.0,60.0,,,60.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",
+2026-03-20,Atlanta,150,Mexico,BASE,65.0,68.0,66.0,67.0,67.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",
+2026-03-20,Atlanta,150,Mexico,Fine Appearance,75.0,78.0,76.0,77.0,77.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",occasional higher/lower
+2026-03-20,Atlanta,150,Mexico,Fair Quality,60.0,60.0,,,60.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",poorer quality and condition lower
+2026-03-20,Atlanta,150,Colombia,BASE,58.0,59.0,,,59.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",occasional higher/lower
+2026-03-20,Atlanta,175,Mexico,Fair Quality,60.0,60.0,,,60.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",poorer quality and condition lower
+2026-03-20,Atlanta,175,Mexico,Fine Appearance,73.0,75.0,74.0,75.0,75.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",occasional higher/lower
+2026-03-20,Atlanta,175,Mexico,BASE,66.0,69.0,67.0,68.0,68.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",occasional lower
+2026-03-20,Atlanta,175,Colombia,BASE,58.0,59.0,,,59.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",occasional higher/lower
+2026-03-20,Atlanta,200,Mexico,Fine Appearance,73.0,75.0,74.0,75.0,75.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",occasional higher/lower
+2026-03-20,Atlanta,200,Mexico,Fair Quality,60.0,60.0,,,60.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",poorer quality and condition lower
+2026-03-20,Atlanta,200,Mexico,BASE,66.0,69.0,67.0,68.0,68.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",occasional lower
+2026-03-20,Atlanta,230,Mexico,Fair Quality,60.0,60.0,,,60.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",poorer quality and condition lower
+2026-03-20,Atlanta,230,Mexico,Fine Appearance,73.0,75.0,74.0,75.0,75.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",occasional higher
+2026-03-20,Atlanta,230,Mexico,BASE,66.0,69.0,67.0,68.0,68.0,"MARKET MEXICO STRONG, COLOMBIA ABOUT STEADY",occasional lower
+2026-03-23,Atlanta,110,Colombia,BASE,60.0,60.0,,,60.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",
+2026-03-23,Atlanta,150,Mexico,BASE,73.0,76.0,74.0,75.0,75.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",few high as 78.00
+2026-03-23,Atlanta,150,Mexico,Fine Appearance,82.0,85.0,83.0,84.0,84.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",occasional higher/lower
+2026-03-23,Atlanta,150,Mexico,Fair Quality,65.0,65.0,,,65.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",poorer quality and condition lower
+2026-03-23,Atlanta,175,Mexico,Fair Quality,65.0,65.0,,,65.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",poorer quality and condition lower
+2026-03-23,Atlanta,175,Mexico,Fine Appearance,82.0,85.0,83.0,84.0,84.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",occasional higher/lower
+2026-03-23,Atlanta,175,Mexico,BASE,73.0,76.0,74.0,75.0,75.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",occasional lower
+2026-03-23,Atlanta,175,Colombia,BASE,,,,,,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",insufficient to quote
+2026-03-23,Atlanta,200,Mexico,BASE,73.0,76.0,74.0,75.0,75.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",occasional lower
+2026-03-23,Atlanta,200,Mexico,Fair Quality,65.0,65.0,,,65.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",poorer quality and condition lower
+2026-03-23,Atlanta,200,Mexico,Fine Appearance,82.0,85.0,83.0,84.0,84.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",occasional higher/lower
+2026-03-23,Atlanta,230,Mexico,Fair Quality,65.0,65.0,,,65.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",poorer quality and condition lower
+2026-03-23,Atlanta,230,Mexico,Fine Appearance,77.0,80.0,78.0,79.0,79.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",occasional higher
+2026-03-23,Atlanta,230,Mexico,BASE,72.0,75.0,73.0,74.0,74.0,"MARKET SEEDLESS TYPE STRONG, SEEDED TYPE STEADY",occasional lower
+2026-03-24,Atlanta,110,Colombia,BASE,60.0,60.0,,,60.0,MARKET ABOUT STEADY,
+2026-03-24,Atlanta,150,Mexico,Fair Quality,65.0,65.0,,,65.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-24,Atlanta,150,Mexico,Fine Appearance,82.0,85.0,83.0,84.0,84.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-24,Atlanta,150,Mexico,BASE,73.0,76.0,74.0,75.0,75.0,MARKET ABOUT STEADY,few high as 78.00
+2026-03-24,Atlanta,175,Mexico,BASE,73.0,76.0,74.0,75.0,75.0,MARKET ABOUT STEADY,occasional lower
+2026-03-24,Atlanta,175,Mexico,Fair Quality,65.0,65.0,,,65.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-24,Atlanta,175,Mexico,Fine Appearance,82.0,85.0,83.0,84.0,84.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-24,Atlanta,175,Colombia,BASE,,,,,,MARKET ABOUT STEADY,insufficient to quote
+2026-03-24,Atlanta,200,Mexico,Fine Appearance,82.0,85.0,83.0,84.0,84.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-24,Atlanta,200,Mexico,BASE,73.0,76.0,74.0,75.0,75.0,MARKET ABOUT STEADY,occasional lower
+2026-03-24,Atlanta,200,Mexico,Fair Quality,65.0,65.0,,,65.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-24,Atlanta,230,Mexico,BASE,72.0,75.0,73.0,74.0,74.0,MARKET ABOUT STEADY,occasional lower
+2026-03-24,Atlanta,230,Mexico,Fine Appearance,77.0,80.0,78.0,79.0,79.0,MARKET ABOUT STEADY,occasional higher
+2026-03-24,Atlanta,230,Mexico,Fair Quality,65.0,65.0,,,65.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-25,Atlanta,110,Colombia,BASE,,,,,,MARKET ABOUT STEADY,insufficient to quote
+2026-03-25,Atlanta,150,Mexico,Fine Appearance,82.0,85.0,83.0,84.0,84.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-25,Atlanta,150,Mexico,Fair Quality,65.0,65.0,,,65.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-25,Atlanta,150,Mexico,BASE,73.0,76.0,74.0,75.0,75.0,MARKET ABOUT STEADY,few high as 78.00
+2026-03-25,Atlanta,175,Mexico,BASE,73.0,76.0,74.0,75.0,75.0,MARKET ABOUT STEADY,occasional lower
+2026-03-25,Atlanta,175,Mexico,Fair Quality,65.0,65.0,,,65.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-25,Atlanta,175,Mexico,Fine Appearance,82.0,85.0,83.0,84.0,84.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-25,Atlanta,200,Mexico,Fair Quality,65.0,65.0,,,65.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-25,Atlanta,200,Mexico,BASE,73.0,76.0,74.0,75.0,75.0,MARKET ABOUT STEADY,occasional lower
+2026-03-25,Atlanta,200,Mexico,Fine Appearance,82.0,85.0,83.0,84.0,84.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-25,Atlanta,230,Mexico,Fine Appearance,77.0,80.0,78.0,79.0,79.0,MARKET ABOUT STEADY,occasional higher
+2026-03-25,Atlanta,230,Mexico,BASE,72.0,75.0,73.0,74.0,74.0,MARKET ABOUT STEADY,occasional lower
+2026-03-25,Atlanta,230,Mexico,Fair Quality,65.0,65.0,,,65.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-26,Atlanta,150,Mexico,BASE,73.0,76.0,74.0,75.0,75.0,MARKET ABOUT STEADY,few high as 78.00
+2026-03-26,Atlanta,150,Mexico,Fair Quality,65.0,65.0,,,65.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-26,Atlanta,150,Mexico,Fine Appearance,82.0,85.0,83.0,84.0,84.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-26,Atlanta,175,Mexico,BASE,73.0,76.0,74.0,75.0,75.0,MARKET ABOUT STEADY,occasional lower
+2026-03-26,Atlanta,175,Mexico,Fine Appearance,82.0,85.0,83.0,84.0,84.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-26,Atlanta,175,Mexico,Fair Quality,65.0,65.0,,,65.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-26,Atlanta,200,Mexico,BASE,73.0,76.0,74.0,75.0,75.0,MARKET ABOUT STEADY,occasional lower
+2026-03-26,Atlanta,200,Mexico,Fair Quality,65.0,65.0,,,65.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-26,Atlanta,200,Mexico,Fine Appearance,82.0,85.0,83.0,84.0,84.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-26,Atlanta,230,Mexico,Fair Quality,65.0,65.0,,,65.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-26,Atlanta,230,Mexico,Fine Appearance,77.0,80.0,78.0,79.0,79.0,MARKET ABOUT STEADY,occasional higher
+2026-03-26,Atlanta,230,Mexico,BASE,72.0,75.0,73.0,74.0,74.0,MARKET ABOUT STEADY,occasional lower
+2026-03-27,Atlanta,110,Mexico,BASE,83.0,84.0,,,84.0,MARKET STRONG,
+2026-03-27,Atlanta,150,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET STRONG,poorer quality and condition lower
+2026-03-27,Atlanta,150,Mexico,BASE,77.0,80.0,78.0,79.0,79.0,MARKET STRONG,occasional lower
+2026-03-27,Atlanta,150,Mexico,Fine Appearance,83.0,85.0,84.0,85.0,85.0,MARKET STRONG,occasional higher/lower
+2026-03-27,Atlanta,150,Colombia,BASE,68.0,69.0,,,69.0,MARKET STRONG,occasional higher/lower
+2026-03-27,Atlanta,175,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET STRONG,poorer quality and condition lower
+2026-03-27,Atlanta,175,Mexico,BASE,77.0,80.0,78.0,79.0,79.0,MARKET STRONG,occasional lower
+2026-03-27,Atlanta,175,Mexico,Fine Appearance,83.0,85.0,84.0,85.0,85.0,MARKET STRONG,occasional higher/lower
+2026-03-27,Atlanta,175,Colombia,BASE,68.0,69.0,,,69.0,MARKET STRONG,occasional higher/lower
+2026-03-27,Atlanta,200,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET STRONG,poorer quality and condition lower
+2026-03-27,Atlanta,200,Mexico,Fine Appearance,83.0,85.0,84.0,85.0,85.0,MARKET STRONG,occasional higher/lower
+2026-03-27,Atlanta,200,Mexico,BASE,77.0,80.0,78.0,79.0,79.0,MARKET STRONG,occasional lower
+2026-03-27,Atlanta,200,Colombia,BASE,68.0,69.0,,,69.0,MARKET STRONG,occasional higher/lower
+2026-03-27,Atlanta,230,Mexico,Fine Appearance,78.0,80.0,79.0,80.0,80.0,MARKET STRONG,occasional higher
+2026-03-27,Atlanta,230,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET STRONG,poorer quality and condition lower
+2026-03-27,Atlanta,230,Mexico,BASE,75.0,78.0,76.0,77.0,77.0,MARKET STRONG,occasional lower
+2026-03-27,Atlanta,230,Colombia,BASE,68.0,69.0,,,69.0,MARKET STRONG,occasional higher/lower
+2026-03-30,Atlanta,110,Mexico,BASE,83.0,84.0,,,84.0,MARKET ABOUT STEADY,
+2026-03-30,Atlanta,150,Mexico,BASE,77.0,77.0,,,77.0,MARKET ABOUT STEADY,occasional lower
+2026-03-30,Atlanta,150,Mexico,Fine Appearance,76.0,80.0,77.0,78.0,78.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-30,Atlanta,150,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-30,Atlanta,150,Colombia,BASE,67.0,69.0,,,69.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-30,Atlanta,175,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-30,Atlanta,175,Mexico,BASE,80.0,81.0,,,81.0,MARKET ABOUT STEADY,occasional lower
+2026-03-30,Atlanta,175,Colombia,BASE,67.0,69.0,,,69.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-30,Atlanta,200,Mexico,BASE,80.0,81.0,,,81.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-30,Atlanta,200,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-30,Atlanta,200,Colombia,BASE,67.0,69.0,,,69.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-30,Atlanta,230,Mexico,BASE,76.0,77.0,,,77.0,MARKET ABOUT STEADY,occasional lower
+2026-03-30,Atlanta,230,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-03-30,Atlanta,230,Colombia,BASE,67.0,69.0,,,69.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-03-31,Atlanta,110,Mexico,BASE,83.0,84.0,,,84.0,MARKET STEADY,
+2026-03-31,Atlanta,150,Mexico,BASE,77.0,77.0,,,77.0,MARKET STEADY,occasional lower
+2026-03-31,Atlanta,150,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET STEADY,poorer quality and condition lower
+2026-03-31,Atlanta,150,Mexico,Fine Appearance,76.0,80.0,77.0,78.0,78.0,MARKET STEADY,occasional higher/lower
+2026-03-31,Atlanta,150,Colombia,BASE,67.0,69.0,,,69.0,MARKET STEADY,occasional higher/lower
+2026-03-31,Atlanta,175,Mexico,BASE,80.0,81.0,,,81.0,MARKET STEADY,occasional lower
+2026-03-31,Atlanta,175,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET STEADY,poorer quality and condition lower
+2026-03-31,Atlanta,175,Colombia,BASE,67.0,69.0,,,69.0,MARKET STEADY,occasional higher/lower
+2026-03-31,Atlanta,200,Mexico,BASE,80.0,81.0,,,81.0,MARKET STEADY,occasional higher/lower
+2026-03-31,Atlanta,200,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET STEADY,poorer quality and condition lower
+2026-03-31,Atlanta,200,Colombia,BASE,67.0,69.0,,,69.0,MARKET STEADY,occasional higher/lower
+2026-03-31,Atlanta,230,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET STEADY,poorer quality and condition lower
+2026-03-31,Atlanta,230,Mexico,BASE,76.0,77.0,,,77.0,MARKET STEADY,occasional lower
+2026-03-31,Atlanta,230,Colombia,BASE,67.0,69.0,,,69.0,MARKET STEADY,occasional higher/lower
+2026-04-01,Atlanta,110,Mexico,BASE,83.0,84.0,,,84.0,MARKET STEADY,
+2026-04-01,Atlanta,150,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET STEADY,poorer quality and condition lower
+2026-04-01,Atlanta,150,Mexico,Fine Appearance,76.0,80.0,77.0,78.0,78.0,MARKET STEADY,occasional higher/lower
+2026-04-01,Atlanta,150,Mexico,BASE,77.0,77.0,,,77.0,MARKET STEADY,occasional lower
+2026-04-01,Atlanta,150,Colombia,BASE,67.0,69.0,,,69.0,MARKET STEADY,occasional higher/lower
+2026-04-01,Atlanta,175,Mexico,BASE,80.0,81.0,,,81.0,MARKET STEADY,occasional lower
+2026-04-01,Atlanta,175,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET STEADY,poorer quality and condition lower
+2026-04-01,Atlanta,175,Colombia,BASE,67.0,69.0,,,69.0,MARKET STEADY,occasional higher/lower
+2026-04-01,Atlanta,200,Mexico,BASE,80.0,81.0,,,81.0,MARKET STEADY,occasional higher/lower
+2026-04-01,Atlanta,200,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET STEADY,poorer quality and condition lower
+2026-04-01,Atlanta,200,Colombia,BASE,67.0,69.0,,,69.0,MARKET STEADY,occasional higher/lower
+2026-04-01,Atlanta,230,Mexico,Fair Quality,67.0,70.0,68.0,69.0,69.0,MARKET STEADY,poorer quality and condition lower
+2026-04-01,Atlanta,230,Mexico,BASE,76.0,77.0,,,77.0,MARKET STEADY,occasional lower
+2026-04-01,Atlanta,230,Colombia,BASE,67.0,69.0,,,69.0,MARKET STEADY,occasional higher/lower
