@@ -1,0 +1,72 @@
+name: Lime Intelligence — Auto Update
+
+on:
+  schedule:
+    # 8:00am hora central (UTC-5) = 13:00 UTC
+    - cron: '0 13 * * *'
+    # 4:00pm hora central (UTC-5) = 21:00 UTC
+    - cron: '0 21 * * *'
+  # También permite correrlo manualmente desde GitHub
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install requests pandas scikit-learn beautifulsoup4 toml
+
+      - name: Create .env file
+        run: |
+          echo "USDA_API_KEY=${{ secrets.USDA_API_KEY }}" > .env
+          echo "BANXICO_TOKEN=${{ secrets.BANXICO_TOKEN }}" >> .env
+          echo "GROQ_API_KEY=${{ secrets.GROQ_API_KEY }}" >> .env
+
+      - name: Run update_prices (McAllen FOB)
+        run: |
+          python3 scripts/update_prices.py
+        continue-on-error: true
+
+      - name: Run fetch_terminals (terminal markets)
+        run: |
+          python3 scripts/fetch_terminals.py
+        continue-on-error: true
+
+      - name: Run fetch_dest_weather (temperatura destinos)
+        run: |
+          python3 scripts/fetch_dest_weather.py
+        continue-on-error: true
+
+      - name: Run build_model_base
+        run: |
+          python3 scripts/build_model_base.py
+        continue-on-error: true
+
+      - name: Run generate_forecast
+        run: |
+          python3 scripts/generate_forecast.py
+        continue-on-error: true
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/processed/
+          git diff --staged --quiet || git commit -m "auto update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git pull --rebase origin main
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
