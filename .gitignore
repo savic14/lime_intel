@@ -8,3 +8,4 @@ colombia_run.log
 data/raw/
 logs/
 *.log
+.streamlit/secrets.toml
