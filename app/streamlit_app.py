@@ -409,16 +409,7 @@ def build_context_for_ai():
         usdmxn=float(lf["usd_mxn"]); chg7=float(lf.get("usd_mxn_chg_7d",0) or 0)
         ctx.append(f"\nTIPO DE CAMBIO: USD/MXN={usdmxn:.4f} (cambio 7d: {chg7:+.4f})")
 
-    # Precio MTT báscula
-    if not tcp_df.empty and "precio_mxn_kg" in tcp_df.columns:
-        last_t = tcp_df.sort_values("date").iloc[-1]
-        pt = float(last_t["precio_mxn_kg"]) if pd.notna(last_t.get("precio_mxn_kg")) else None
-        if pt:
-            usdmxn = float(fx_df.sort_values("date").iloc[-1]["usd_mxn"]) if not fx_df.empty else 17.5
-            pt_usd = (pt * 18.14) / usdmxn
-            cal_t  = str(last_t.get("calibre",""))
-            ctx.append(f"\nPRECIO BÁSCULA TCP (mi costo de compra): ${pt:.2f} MXN/kg = ${pt_usd:.1f} USD/caja est. calibre {cal_t} (fecha: {str(last_t['date'])[:10]})")
-            ctx.append(f"  Este es mi costo real de compra en báscula MTT en origen. Margen bruto estimado = precio McAllen FOB - ${pt_usd:.1f} USD/caja")
+
 
     # Temperatura ciudades destino
     if not destw_df.empty:
@@ -455,45 +446,46 @@ def generate_executive_summary(context_str, fecha_str, api_key=""):
                 "⚠️  GROQ_API_KEY no configurada.\n\n"
                 "Crea el archivo  .streamlit/secrets.toml  con:\n\n"
                 "    GROQ_API_KEY = 'gsk_...'")
-    prompt = f"""Eres Victor, operador senior de Top Fresh LLC (McAllen TX), importador de limón persa México-EE.UU.
-Compras en Tabasco/Veracruz y vendes FOB McAllen a distribuidores como Houston Fruitland.
-Tu fruta principal es calibres 230 y 250, pero analiza TODOS los calibres disponibles en los datos para identificar cuál tiene mejor precio relativo esta semana.
+    prompt = f"""Eres un analista senior de mercados de limón persa (lima Tahití) México-EE.UU.
+Tu objetivo es dar un análisis objetivo del mercado del limón persa para cualquier operador comercial.
+No menciones empresas específicas, clientes, calibres preferidos ni nombres propios. Habla del mercado en general.
+Analiza TODOS los calibres disponibles con datos (110, 150, 175, 200, 230, 250).
 Hoy es {fecha_str}.
 
 DATOS DEL SISTEMA:
 {context_str}
 
-Analiza estos datos como operador que arriesga dinero real, no como académico.
+Analiza estos datos como operador que arriesga dinero real. Sé específico con números.
 
-FORMATO DE RESPUESTA (primera línea SOLO la señal BUY/SELL/HOLD, luego el análisis):
+FORMATO DE RESPUESTA (primera línea SOLO la señal BUY/SELL/HOLD, luego el análisis sin encabezados en negrita, en prosa clara):
 
 BUY
 
 SITUACIÓN DEL MERCADO
-Explica en 2-3 oraciones qué está pasando con el precio esta semana, si está alto/bajo vs histórico, y por qué.
+En 2-3 oraciones: qué está pasando con los precios esta semana en todos los calibres disponibles, si están altos/bajos vs lo normal y por qué.
 
 OFERTA Y CRUCES
-Explica qué significa el volumen de Pharr esta semana vs la semana anterior. Si bajó mucho, explica que menos fruta = precio sube. Si subió, explica presión bajista.
+Qué indica el volumen de cruces por Pharr esta semana vs semanas previas. Si bajó: menos fruta disponible, presión alcista. Si subió: más oferta, presión bajista.
 
-CALIDAD Y PRECIO DE TU FRUTA
-Dado que tu fruta es calibre 230/250 BASE/Fine, ¿en qué rango de precio debería estar? Menciona el premio de Fine appearance si aplica.
+CALIBRES Y PRECIOS
+Analiza TODOS los calibres con datos disponibles (110, 150, 175, 200, 230, 250). Identifica cuál tiene mejor precio relativo y cuál tiene más spread entre Fine y Fair. Menciona el premio de Fine Appearance si es relevante.
 
 MEJOR MERCADO TERMINAL
-¿A qué mercado conviene mandar la fruta? ¿Por qué? Menciona el margen neto estimado por caja.
+Qué mercado destino tiene mejor margen neto esta semana y por qué. Menciona margen estimado por caja.
 
 CLIMA Y OFERTA FUTURA
-¿Qué implica la lluvia actual para la oferta en 7-14 días? ¿Habrá más o menos fruta llegando?
+Qué implica la lluvia actual en zonas productoras para la oferta en 7-14 días.
 
 ALERTA DE CALENDARIO
-Si hay evento relevante (Semana Santa, feriados) que afecte demanda u operación, explícalo.
+Si hay evento próximo (feriados, días festivos) que afecte demanda u operación, menciónalo.
 
 RECOMENDACIÓN CONCRETA
-Dile a Victor exactamente qué hacer esta semana: ¿comprar cuántas cajas, a qué precio máximo, vender a quién, esperar?
+Señal clara: ¿comprar, vender, esperar? ¿A qué precio? ¿Qué calibres priorizar esta semana?
 
 CONFIANZA: ALTA/MEDIA/BAJA
-Explica en una línea por qué tienes esa confianza (qué datos faltan o son inciertos).
+Una línea explicando qué datos faltan o son inciertos.
 
-Máximo 35 líneas total. Sé específico con números. Habla en primera persona como Victor."""
+Máximo 35 líneas. Sin mencionar empresas o clientes específicos. Enfocado en el mercado."""
 
     try:
         resp = requests.post(
@@ -645,7 +637,7 @@ def render_fc_cards(rows_df, stale=False):
             st.markdown(f"""
 <div class="{card_cls}">
   {stale_html}
-  <div class="fc-calibre">{size} · {quality} · {age_str}</div>
+  <div class="fc-calibre">{size} · {quality} · USDA {ld[:10] if len(ld)>=10 else ld}</div>
   <div class="fc-price">${price:.2f}</div>
   <div class="fc-pred">1D: <strong>{p1d_str}</strong> &nbsp; 7D: <strong>{p7d_str}</strong></div>
   <div class="fc-pred">Dir: <span class="{d1_cls}">{d1_txt}</span></div>
@@ -682,6 +674,11 @@ def render_table(rows_df, banner=""):
         size = int(row["size"]); lp=float(row["last_official_price"])
         mae  = float(row.get("mae_1d",1.3)); est=bool(row.get("estimated_price",False))
         ld   = str(row.get("last_date_clean","")); det=get_detail(size)
+        # Fecha del último dato USDA para este calibre
+        try:
+            price_rows_cal = price_df[price_df["size"]==size].sort_values("date")
+            last_usda_date = price_rows_cal.iloc[-1]["date"].strftime("%d %b %Y") if not price_rows_cal.empty else "sin dato"
+        except: last_usda_date = ld[:10] if len(ld)>=10 else ld
         tag  = "<span class='tag-e'>EST</span>" if est else ("" if det.get("mlow") else "<span class='tag-o'>OLD</span>")
         if det.get("mlow") and det.get("mhigh"):
             rng_html=(f"<div class='rng-hdr'>{fp(det['mlow'])}–{fp(det['mhigh'])}</div>"
@@ -731,9 +728,10 @@ def render_table(rows_df, banner=""):
             ayer_html=f"<div class='ay-v {ay_c}'>{'✓' if ay_ok else '✗'}</div><div class='ay-s'>{ay_t}<br>±${ay_err:.2f}</div>"
         else:
             ayer_html="<div class='ay-v' style='color:#e0e0e0'>—</div>"
-        html+=(f"<div class='tr'><div class='sz'>{size}{tag}</div><div class='pr'>{fp(lp)}</div>"
+        usda_date_lbl = f"<div style='font-size:9px;color:#90a4ae;margin-top:2px'>{last_usda_date}</div>"
+        html+=(f"<div class='tr'><div class='sz'>{size}{tag}</div><div class='pr'>{fp(lp)}{usda_date_lbl}</div>"
                f"<div>{rng_html}</div><div>{tend_html}</div>"
-               f"<div>{hz_html}</div><div>{sc_html}</div><div>{ayer_html}</div></div>")
+               f"<div>{hz_html}</div></div>")
     html += "</div>"
     return html
 
@@ -747,77 +745,11 @@ if not stale_fc.empty:
     if not old_rows.empty:
         st.markdown(render_table(old_rows,"Sin datos recientes de USDA"), unsafe_allow_html=True)
 
-st.markdown("<div class='note'>Verde ≥60% · Amarillo ≥40% · Rojo &lt;40% — % de días en que el precio real cayó dentro del rango predicho (últimos 5 días).</div>", unsafe_allow_html=True)
-st.markdown("---")
-
-
-# ══════════════════════════════════════════════════════════════════════════════
-# SECCIÓN 4 — SCORECARD  ← FIX: una tarjeta por st.column, no HTML concat
-# ══════════════════════════════════════════════════════════════════════════════
-st.markdown("<div class='sec'>🎯 Scorecard · Precisión del modelo</div>", unsafe_allow_html=True)
-
-if not sc_df.empty:
-    size_col = "size" if "size" in sc_df.columns else None
-    pred_col = next((c for c in ["pred_1d","predicted_target_1d"] if c in sc_df.columns), None)
-    real_col = next((c for c in ["real_1d","actual_1d"]          if c in sc_df.columns), None)
-    err_col  = next((c for c in ["abs_error_1d","mae_1d"]        if c in sc_df.columns), None)
-    hit_col  = next((c for c in ["hit_1d","direction_hit"]       if c in sc_df.columns), None)
-
-    total   = len(sc_df)
-    hits    = int(sc_df[hit_col].astype(str).str.upper().isin(["TRUE","1","YES"]).sum()) if hit_col else 0
-    avg_err = sc_df[err_col].mean() if err_col else None
-
-    pct_txt = f"{hits/total*100:.0f}%" if total else "—"
-    err_txt = f"${avg_err:.2f}" if avg_err else "—"
-    hit_col_c = "#2e7d32" if total and hits/total >= 0.6 else "#e65100" if total and hits/total >= 0.4 else "#c62828"
-    err_col_c = "#2e7d32" if avg_err and avg_err < 1.5 else "#e65100" if avg_err and avg_err < 3.5 else "#c62828"
-    st.markdown(
-        f"<div style='display:flex;gap:24px;margin-bottom:14px;flex-wrap:wrap'>"
-        f"<div><div style='font-size:11px;color:#78909c;font-weight:700;text-transform:uppercase;letter-spacing:1px'>Aciertos dirección</div>"
-        f"<div style='font-size:1.6rem;font-weight:800;color:{hit_col_c}'>{hits}/{total} <span style='font-size:1rem'>{pct_txt}</span></div></div>"
-        f"<div><div style='font-size:11px;color:#78909c;font-weight:700;text-transform:uppercase;letter-spacing:1px'>Error promedio 1D</div>"
-        f"<div style='font-size:1.6rem;font-weight:800;color:{err_col_c}'>{err_txt}</div></div>"
-        f"<div><div style='font-size:11px;color:#78909c;font-weight:700;text-transform:uppercase;letter-spacing:1px'>Calibres en scorecard</div>"
-        f"<div style='font-size:1.6rem;font-weight:800;color:#1a237e'>{total}</div></div>"
-        f"</div>",
-        unsafe_allow_html=True)
-
-    n_cards  = len(sc_df)
-    cols_sc  = st.columns(min(n_cards, 4))
-    for idx, (_, r) in enumerate(sc_df.iterrows()):
-        size    = str(int(r[size_col])) if size_col else "—"
-        quality = str(r.get("quality","BASE"))
-        pred    = r.get(pred_col, None) if pred_col else None
-        real    = r.get(real_col, None) if real_col else None
-        err     = r.get(err_col,  None) if err_col  else None
-        hit     = str(r.get(hit_col,"")).upper() if hit_col else ""
-
-        hit_bool = hit in ("TRUE","1","YES")
-        try:    err_f = float(err)
-        except: err_f = None
-        err_cls  = ("sc-card-err-ok"   if err_f and err_f < 1.5 else
-                    "sc-card-err-warn" if err_f and err_f < 3.5 else "sc-card-err-bad")
-        err_str  = f"${err_f:.2f}"       if err_f  and pd.notna(err_f)  else "—"
-        pred_str = f"${float(pred):.2f}" if pred   and pd.notna(pred)   else "—"
-        real_str = f"${float(real):.2f}" if real   and pd.notna(real)   else "—"
-        hit_str  = "<span class='sc-hit-yes'>✓ Dirección OK</span>" if hit_bool else "<span class='sc-hit-no'>✗ Dirección errónea</span>"
-
-        with cols_sc[idx % len(cols_sc)]:
-            st.markdown(f"""
-<div class="sc-card-wrap">
-  <div class="sc-card-size">{size} · {quality}</div>
-  <div class="{err_cls}">{err_str} <span style="font-size:11px;font-weight:400;color:#90a4ae">error abs</span></div>
-  <div class="sc-card-row"><span>Predicho</span><strong>{pred_str}</strong></div>
-  <div class="sc-card-row"><span>Real</span><strong>{real_str}</strong></div>
-  <div style="font-size:11px;margin-top:5px">{hit_str}</div>
-</div>""", unsafe_allow_html=True)
-else:
-    st.info("No se encontró daily_forecast_scorecard.csv — se genera tras el primer ciclo de validación.")
 
 st.markdown("---")
 
 
-# ══════════════════════════════════════════════════════════════════════════════
+
 # SECCIÓN 5 — SEÑALES (lluvia, movimiento, FX) — igual que V14
 # ══════════════════════════════════════════════════════════════════════════════
 st.markdown("<div class='sec'>📡 Señales del mercado</div>", unsafe_allow_html=True)
@@ -860,9 +792,15 @@ for key,nombre,pct,path in ZONAS_LLUVIA:
     elif ll7_r>15: dc,nv="c-y","Media"
     else:          dc,nv="c-g","Baja ✓"
     fc_note=f"pronóst. 7d: {ll7_f:.0f}mm" if ll7_f>0 else "—"
+    # Fecha del último dato real de lluvia
+    try:
+        df_r2=pd.read_csv(path); df_r2["date"]=pd.to_datetime(df_r2["date"],errors="coerce")
+        last_rain_date=df_r2.dropna(subset=["date"]).sort_values("date").iloc[-1]["date"].strftime("%d %b")
+    except: last_rain_date="—"
     rain_rows_html+=(f"<tr><td>{nombre.split(',')[0]}</td><td style='color:#546e7a'>{pct}%</td>"
                      f"<td class='{dc}' style='font-weight:800'>{ll7_r:.1f}</td>"
-                     f"<td class='{dc}'>{nv}</td><td style='color:#546e7a'>{fc_note}</td></tr>")
+                     f"<td class='{dc}'>{nv}</td><td style='color:#546e7a'>{fc_note}</td>"
+                     f"<td style='color:#90a4ae;font-size:10px'>{last_rain_date}</td></tr>")
 
 avg_ll=sum(z["ll7_real"] for z in lluvia_data)/len(lluvia_data) if lluvia_data else 0
 avg_fc=sum(z["ll7_fc"]   for z in lluvia_data)/len(lluvia_data) if lluvia_data else 0
@@ -874,13 +812,20 @@ if avg_fc>20:
     fc_alert=f"<div style='margin-top:6px;font-size:12px;color:#b71c1c;font-weight:700'>⚠ Pronóstico: {avg_fc:.0f}mm en próx. 7d → posible impacto en oferta</div>"
 mtt_bars=next((z["bars"] for z in lluvia_data if "Martínez" in z["zona"]),"")
 
+# Fecha último dato lluvia MTT
+try:
+    df_mtt_r = pd.read_csv(DATA/"lluvia_mtt.csv"); df_mtt_r["date"]=pd.to_datetime(df_mtt_r["date"],errors="coerce")
+    last_lluvia_date = df_mtt_r.dropna(subset=["date"]).sort_values("date").iloc[-1]["date"].strftime("%d %b %Y")
+    lluvia_date_lbl = f" · dato al {last_lluvia_date}"
+except: lluvia_date_lbl = ""
+
 with c1:
     st.markdown(
-        f"<div class='sig'><div class='sig-lbl'>🌧 Lluvia zonas productoras</div>"
+        f"<div class='sig'><div class='sig-lbl'>🌧 Lluvia zonas productoras{lluvia_date_lbl}</div>"
         f"<div class='sig-val {ll_cls}'>{avg_ll:.1f} mm/7d</div>"
         f"<div class='sig-desc'>{ll_msg}</div>{mtt_bars}"
         f"<div style='font-size:11px;color:#37474f;font-weight:600;margin:4px 0 2px'>MTT (54%) — sólido=real · punteado=pronóstico</div>"
-        f"<table class='mt'><tr><th>Zona</th><th>%</th><th>mm/7d</th><th>Nivel</th><th>Pronóst. 7d</th></tr>"
+        f"<table class='mt'><tr><th>Zona</th><th>%</th><th>mm/7d</th><th>Nivel</th><th>Pronóst. 7d</th><th>Actualizado</th></tr>"
         f"{rain_rows_html}</table>{fc_alert}</div>",
         unsafe_allow_html=True)
 
@@ -917,9 +862,17 @@ if not weekly.empty:
                          f"<td style='font-weight:800;color:#1a237e'>{w['pharr_m']:.1f}M</td>"
                          f"<td style='color:#546e7a'>~{w['camiones']}</td><td>{chg_s}</td></tr>")
 
+# Fecha del último dato de movimiento disponible
+move_last_date = ""
+if not weekly.empty:
+    try:
+        last_w_date = pd.to_datetime(weekly.iloc[0]["fecha_fin"])
+        move_last_date = f" · dato al {last_w_date.strftime('%d %b %Y')}"
+    except: pass
+
 with c2:
     st.markdown(
-        f"<div class='sig'><div class='sig-lbl'>🚛 Entrada Pharr/McAllen — por semana</div>"
+        f"<div class='sig'><div class='sig-lbl'>🚛 Entrada Pharr/McAllen — por semana{move_last_date}</div>"
         f"<div class='sig-val {ph_cls}'>{ph_val}</div><div class='sig-desc'>{ph_msg}</div>"
         f"<table class='mt'><tr><th>Semana</th><th>lbs total</th><th>Camiones</th><th>vs ant.</th></tr>"
         f"{move_rows_html}</table>"
@@ -950,144 +903,8 @@ st.markdown("---")
 
 
 # ══════════════════════════════════════════════════════════════════════════════
-# SECCIÓN 6 — MERCADOS TERMINALES (igual que V14)
+# SECCIÓN 6 — MERCADOS TERMINALES
 # ══════════════════════════════════════════════════════════════════════════════
-# ══════════════════════════════════════════════════════════════════════════════
-# SECCIÓN NUEVA — INDICADORES ADELANTADOS (SNIIM + Temperatura destinos)
-# ══════════════════════════════════════════════════════════════════════════════
-st.markdown("<div class=\'sec\'>📊 Indicadores adelantados</div>", unsafe_allow_html=True)
-c_sniim, c_destw = st.columns(2)
-
-with c_sniim:
-    st.markdown("<div class='sig'><div class='sig-lbl'>🏭 Precio báscula MTT (entrada manual)</div>", unsafe_allow_html=True)
-
-    # Mostrar último precio registrado
-    tcp_last = None
-    if not tcp_df.empty and "precio_mxn_kg" in tcp_df.columns:
-        tcp_sorted = tcp_df.sort_values("date")
-        last_tcp   = tcp_sorted.iloc[-1]
-        tcp_last   = float(last_tcp["precio_mxn_kg"])
-        usdmxn_now = float(fx_df.sort_values("date").iloc[-1]["usd_mxn"]) if not fx_df.empty else 17.5
-        tcp_usd    = (tcp_last * 18.14) / usdmxn_now
-        prev_tcp   = tcp_sorted.iloc[-2]["precio_mxn_kg"] if len(tcp_sorted)>1 else None
-        chg_t = ""
-        t_cls = "c-b"
-        if prev_tcp is not None:
-            try:
-                delta = tcp_last - float(prev_tcp)
-                chg_t = f"({delta:+.2f} MXN/kg)"
-                t_cls = "c-g" if delta>0 else "c-r" if delta<0 else "c-b"
-            except: pass
-        # Señal: si precio TCP sube, exportar es menos atractivo para productor
-        if tcp_last > 20: sig,sc2 = "Precio báscula alto → productor prefiere MX → menos exportación","c-r"
-        elif tcp_last > 14: sig,sc2 = "Precio moderado → exportación y mercado MX equilibrados","c-b"
-        else: sig,sc2 = "Precio bajo → exportación más atractiva → más oferta en McAllen","c-g"
-        # Historial últimas 5 entradas
-        rows_t = ""
-        for _,r in tcp_sorted.tail(5).iloc[::-1].iterrows():
-            try:
-                d = str(r["date"])[:10]; p = float(r["precio_mxn_kg"])
-                cal = str(r.get("calibre","")) or "—"; nota = str(r.get("nota","")) or ""
-                rows_t += f"<tr><td>{d}</td><td>${p:.2f}</td><td>{cal}</td><td style='color:#90a4ae;font-size:11px'>{nota[:20]}</td></tr>"
-            except: pass
-        st.markdown(
-            f"<div class='sig-val {t_cls}'>${tcp_last:.2f} MXN/kg</div>"
-            f"<div class='sig-desc'>${tcp_usd:.1f} USD/caja est. {chg_t}</div>"
-            f"<div class='sig-desc {sc2}'>{sig}</div>"
-            f"<table class='mt'><tr><th>Fecha</th><th>MXN/kg</th><th>Calibre</th><th>Nota</th></tr>{rows_t}</table>",
-            unsafe_allow_html=True)
-    else:
-        st.markdown("<div class='sig-desc' style='color:#90a4ae'>Sin registros aún — ingresa el primer precio abajo</div>", unsafe_allow_html=True)
-
-    # Formulario MTT — fecha, rango de precio, múltiples calibres
-    st.markdown("<div style='border-top:1px solid #e0e0e0;margin:10px 0 8px'></div>", unsafe_allow_html=True)
-    st.markdown("<div style='font-size:11px;font-weight:700;color:#37474f;text-transform:uppercase;letter-spacing:1px;margin-bottom:8px'>+ Registrar precio báscula MTT</div>", unsafe_allow_html=True)
-
-    # Fila 1: fecha y nota
-    col_fecha, col_nota = st.columns([1,2])
-    with col_fecha:
-        import datetime as _dt
-        nueva_fecha = st.date_input("Fecha", value=date.today(), key="mtt_fecha")
-    with col_nota:
-        nueva_nota = st.text_input("Nota", key="mtt_nota", placeholder="ej: semana 14, post lluvia")
-
-    # Fila 2: calibres a registrar (múltiple selección)
-    calibres_sel = st.multiselect(
-        "Calibres a registrar",
-        options=["110","150","175","200","230","250"],
-        default=["230","250"],
-        key="mtt_calibres"
-    )
-
-    # Fila 3: precio por calibre seleccionado (mín y máx)
-    mtt_precios = {}
-    if calibres_sel:
-        st.markdown("<div style='font-size:11px;color:#546e7a;margin:4px 0 6px'>Precio por calibre (MXN/kg)</div>", unsafe_allow_html=True)
-        n_cols = min(len(calibres_sel), 3)
-        cal_cols = st.columns(n_cols)
-        for i, cal in enumerate(calibres_sel):
-            with cal_cols[i % n_cols]:
-                st.markdown(f"<div style='font-size:11px;font-weight:700;color:#1a237e;margin-bottom:2px'>Cal {cal}</div>", unsafe_allow_html=True)
-                p_min = st.number_input(f"Mín", min_value=1.0, max_value=80.0, value=18.0, step=0.5, key=f"mtt_min_{cal}")
-                p_max = st.number_input(f"Máx", min_value=1.0, max_value=80.0, value=22.0, step=0.5, key=f"mtt_max_{cal}")
-                mtt_precios[cal] = {"min": p_min, "max": p_max, "frec": round((p_min + p_max) / 2, 2)}
-
-    if st.button("💾 Guardar precios MTT", key="btn_mtt", type="primary"):
-        if not calibres_sel:
-            st.warning("Selecciona al menos un calibre")
-        else:
-            import csv
-            fieldnames = ["date","calibre","precio_min_kg","precio_max_kg","precio_mxn_kg","nota"]
-            tcp_existe = TCP_PRICE_PATH.exists()
-            with open(TCP_PRICE_PATH, "a", newline="") as f:
-                w = csv.DictWriter(f, fieldnames=fieldnames)
-                if not tcp_existe: w.writeheader()
-                for cal, precios in mtt_precios.items():
-                    w.writerow({
-                        "date":           nueva_fecha.isoformat(),
-                        "calibre":        cal,
-                        "precio_min_kg":  precios["min"],
-                        "precio_max_kg":  precios["max"],
-                        "precio_mxn_kg":  precios["frec"],
-                        "nota":           nueva_nota,
-                    })
-            resumen = " | ".join([f"Cal {c}: ${v['min']:.1f}-${v['max']:.1f}" for c,v in mtt_precios.items()])
-            st.success(f"✓ Guardado {nueva_fecha} — {resumen}")
-            st.cache_data.clear(); st.rerun()
-
-    st.markdown("</div>", unsafe_allow_html=True)
-
-with c_destw:
-    destw_inner = ""
-    if not destw_df.empty:
-        try:
-            fw = destw_df[destw_df["tipo"]=="forecast"].copy()
-            fw["date"] = pd.to_datetime(fw["date"])
-            next7 = fw[fw["date"] <= pd.Timestamp.today() + timedelta(days=7)]
-            if not next7.empty:
-                avg_by_city = next7.groupby("city")["temp_max"].mean()
-                hottest = avg_by_city.idxmax(); hottest_t = avg_by_city.max()
-                if hottest_t>=30:   d_msg,d_cls = f"🔥 {hottest} alcanzará {hottest_t:.0f}°C — demanda ↑↑","c-g"
-                elif hottest_t>=22: d_msg,d_cls = f"☀️ Temperaturas moderadas — demanda normal","c-b"
-                else:               d_msg,d_cls = f"❄️ Frío en destinos — demanda puede bajar","c-r"
-                rows_w = ""
-                for city in ["Chicago","Atlanta","New York","Los Angeles","Houston"]:
-                    cd = next7[next7["city"]==city]
-                    if not cd.empty:
-                        avg_t = cd["temp_max"].mean()
-                        em = "🔥" if avg_t>=30 else ("☀️" if avg_t>=22 else "❄️")
-                        rows_w += f"<tr><td>{city}</td><td>{avg_t:.0f}°C</td><td>{em}</td></tr>"
-                destw_inner = (f"<div class=\'sig-val {d_cls}\'>{hottest_t:.0f}°C</div>"
-                               f"<div class=\'sig-desc\'>{d_msg}</div>"
-                               f"<table class=\'mt\'><tr><th>Ciudad</th><th>Máx 7d avg</th><th></th></tr>{rows_w}</table>")
-        except Exception as e:
-            destw_inner = f"<div class=\'sig-desc\'>Error: {e}</div>"
-    if not destw_inner:
-        destw_inner = "<div class=\'sig-desc\'>Sin datos - corre fetch_dest_weather.py</div>"
-    st.markdown(f"<div class=\'sig\'><div class=\'sig-lbl\'>🌡️ Temperatura ciudades destino (próx. 7d)</div>{destw_inner}</div>", unsafe_allow_html=True)
-
-st.markdown("---")
-
 st.markdown("<div class='sec'>🏪 Comparación de mercados terminales</div>", unsafe_allow_html=True)
 st.caption("Precio terminal − FOB McAllen − flete estimado = margen neto/caja. Verde = conviene. Rojo = no conviene.")
 
