@@ -50,6 +50,10 @@ jobs:
           python3 scripts/fetch_dest_weather.py
         continue-on-error: true
 
+      - name: Run fetch_movement
+        run: python3 scripts/fetch_movement.py
+        continue-on-error: true
+
       - name: Run build_model_base
         run: |
           python3 scripts/build_model_base.py
