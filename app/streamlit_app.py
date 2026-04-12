@@ -269,15 +269,7 @@ def get_detail(size, quality="BASE"):
             "low": sf("low_price"), "high": sf("high_price"),
             "tone": str(last.get("market_tone", ""))}
 
-def mtt_est():
-    if mtt_df.empty or fx_df.empty: return None
-    try:
-        last_mtt = mtt_df.dropna(subset=["precio_min_kg"]).sort_values("date").iloc[-1]
-        usdmxn   = float(fx_df.sort_values("date").iloc[-1]["usd_mxn"])
-        lo = round((float(last_mtt["precio_min_kg"]) * 18.14 / usdmxn) + 15, 1)
-        hi = round((float(last_mtt["precio_max_kg"]) * 18.14 / usdmxn) + 22, 1)
-        return {"lo": lo, "hi": hi, "fecha": pd.to_datetime(last_mtt["date"]).strftime("%d %b")}
-    except: return None
+def mtt_est(): return None
 
 def build_sc_stats():
     stats = {}
@@ -887,16 +879,13 @@ if not fx_df.empty:
     if   chg7>0.5:  fx_cls,fx_msg="c-r",f"Peso débil ({chg7:+.2f}) → exportación ↑ → presión bajista"
     elif chg7<-0.5: fx_cls,fx_msg="c-g",f"Peso fuerte ({chg7:+.2f}) → exportación ↓ → menos oferta"
     else:            fx_cls,fx_msg="c-b",f"Estable ({chg7:+.4f} en 7d) — sin presión adicional"
-    if mtt:
-        mtt_html=(f"<div class='divider'></div><div class='sig-lbl'>🏭 MTT → McAllen est. ({mtt['fecha']})</div>"
-                  f"<div style='font-size:16px;font-weight:800;color:#e65100;margin:3px 0'>${mtt['lo']:.1f} — ${mtt['hi']:.1f} USD/caja</div>"
-                  f"<div class='sig-desc'>Piso de precio — si el mercado cae aquí, productores dejan de exportar</div>")
+
 
 with c3:
     st.markdown(
         f"<div class='sig'><div class='sig-lbl'>💱 USD/MXN al {fx_date_s}</div>"
         f"<div class='sig-val {fx_cls}'>{fx_val}</div>"
-        f"<div class='sig-desc'>{fx_msg}</div>{mtt_html}</div>",
+        f"<div class='sig-desc'>{fx_msg}</div></div>",
         unsafe_allow_html=True)
 
 st.markdown("---")
