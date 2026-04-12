@@ -895,7 +895,7 @@ st.markdown("---")
 # SECCIÓN 6 — MERCADOS TERMINALES
 # ══════════════════════════════════════════════════════════════════════════════
 st.markdown("<div class='sec'>🏪 Comparación de mercados terminales</div>", unsafe_allow_html=True)
-st.caption("Precio terminal − FOB McAllen − flete estimado = margen neto/caja. Verde = conviene. Rojo = no conviene.")
+st.caption("Precios en mercados terminales EE.UU. — Señal basada en tono USDA reportado.")
 
 mcallen_prices={}
 if not price_df.empty:
@@ -959,6 +959,6 @@ if mkt_data:
             "<th>Margen neto</th><th>Señal</th><th>Tono USDA</th><th>Dato</th></tr>"
             +rows_html+"</table></div>",
             unsafe_allow_html=True)
-    st.caption("Flete est. McAllen→destino (base 1,080 cajas/camión). No incluye comisión broker ni manejo en destino.")
+    
 else:
     st.info("No se encontraron archivos terminal_*.csv · Corre: python update_prices.py --terminals")
