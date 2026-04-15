@@ -69,11 +69,11 @@ st.markdown("""
 
 /* Tabla forecast detallada */
 .tbl-wrap{background:#fff;border-radius:10px;border:1px solid #dde1ea;overflow-x:auto;margin-bottom:10px}
-.th{background:#eef0f7;display:grid;padding:8px 14px;font-size:11px;font-weight:700;
+.th{background:#eef0f7;display:grid;padding:8px 14px;font-size:12px;font-weight:700;
     color:#37474f;text-transform:uppercase;letter-spacing:0.8px;border-bottom:1px solid #dde1ea;
-    grid-template-columns:60px 68px 130px 90px 240px 130px 60px;gap:8px;align-items:center;min-width:800px}
+    grid-template-columns:60px 68px 130px 90px 240px;gap:8px;align-items:center;min-width:600px}
 .tr{display:grid;padding:11px 14px;border-bottom:1px solid #f0f2f7;
-    grid-template-columns:60px 68px 130px 90px 240px 130px 60px;gap:8px;align-items:start;min-width:800px}
+    grid-template-columns:60px 68px 130px 90px 240px;gap:8px;align-items:start;min-width:600px}
 .tr:last-child{border:none}
 .tr:hover{background:#f8f9fd}
 .sz{font-size:14px;font-weight:800;color:#1a237e;padding-top:2px}
@@ -82,10 +82,10 @@ st.markdown("""
 .rng-sub{font-size:11px;color:#546e7a;margin-top:2px}
 .tend-arrow{font-size:24px;font-weight:800;line-height:1}
 .tend-txt{font-size:11px;color:#37474f;margin-top:3px;line-height:1.3;font-weight:600}
-.hz{display:flex;gap:6px;margin-bottom:3px;align-items:center}
-.hl{width:26px;font-size:11px;color:#37474f;font-weight:700;flex-shrink:0}
+.hz{display:flex;gap:6px;margin-bottom:4px;align-items:center}
+.hl{width:30px;font-size:12px;color:#37474f;font-weight:700;flex-shrink:0}
 .hd{font-size:11px;font-weight:800;width:14px;flex-shrink:0}
-.hr{font-size:11px;font-weight:700;color:#1a237e}
+.hr{font-size:13px;font-weight:700;color:#1a237e}
 .hs{color:#1b5e20}.hb{color:#b71c1c}.he{color:#455a64}
 .sc-ttl{font-size:11px;font-weight:700;color:#37474f;margin-bottom:4px}
 .sc-row{display:flex;justify-content:space-between;margin-bottom:3px}
@@ -125,7 +125,7 @@ st.markdown("""
 /* Resumen ejecutivo */
 .exec-card{background:#fff;border-radius:12px;border:2px solid #1a237e;padding:16px 20px;margin-bottom:14px}
 .exec-title{font-size:13px;font-weight:800;color:#1a237e;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px}
-.exec-body{font-size:13px;color:#212121;line-height:1.7;white-space:pre-wrap}
+.exec-body{font-size:15px;color:#212121;line-height:1.8;white-space:pre-wrap}
 .ai-signal{display:inline-block;padding:5px 16px;border-radius:20px;font-size:13px;font-weight:800;letter-spacing:1px}
 .sig-buy{background:#e8f5e9;color:#1b5e20;border:1px solid #4caf50}
 .sig-sell{background:#fce4ec;color:#880e4f;border:1px solid #e91e63}
@@ -204,6 +204,9 @@ def load():
     for df in [fc, sc, price, move, fx, mtt]:
         if not df.empty and "date" in df.columns:
             df["date"] = pd.to_datetime(df["date"], errors="coerce")
+    # Limpiar filas con fecha NaT en FX
+    if not fx.empty:
+        fx = fx.dropna(subset=["date","usd_mxn"]).sort_values("date").reset_index(drop=True)
     sniim = pd.read_csv(SNIIM_PATH)       if SNIIM_PATH.exists()       else pd.DataFrame()
     tcp   = pd.read_csv(TCP_PRICE_PATH)    if TCP_PRICE_PATH.exists()    else pd.DataFrame()
     destw = pd.read_csv(DEST_WEATHER_PATH) if DEST_WEATHER_PATH.exists() else pd.DataFrame()
@@ -275,7 +278,8 @@ def build_sc_stats():
     stats = {}
     if sc_df.empty or fc.empty: return stats
     for size in fc["size"].unique():
-        size = int(size)
+        try: size = int(size)
+        except: continue
         sc_s = (sc_df[sc_df["size"] == size].sort_values("date")
                 if "date" in sc_df.columns else sc_df[sc_df["size"] == size])
         if sc_s.empty: continue
@@ -484,8 +488,8 @@ Máximo 35 líneas. Sin mencionar empresas o clientes específicos. Enfocado en 
             "https://api.groq.com/openai/v1/chat/completions",
             headers={"Authorization": f"Bearer {api_key}",
                      "content-type": "application/json"},
-            json={"model": "llama-3.3-70b-versatile",
-                  "max_tokens": 900,
+            json={"model": "llama-3.1-8b-instant",
+                  "max_tokens": 600,
                   "messages": [{"role": "user", "content": prompt}]},
             timeout=30,
         )
@@ -542,10 +546,11 @@ for ev, desc, dias in eventos_activos[:1]:
 # ══════════════════════════════════════════════════════════════════════════════
 st.markdown("<div class='sec'>📋 Resumen ejecutivo — análisis de mercado</div>", unsafe_allow_html=True)
 
+api_key_now = get_api_key()
 with st.spinner("Generando análisis de mercado..."):
     signal, ai_body = generate_executive_summary(
         build_context_for_ai(), hoy.strftime("%A %d de %B de %Y"),
-        api_key=get_api_key())
+        api_key=api_key_now)
 
 sig_class = {"BUY":"sig-buy","SELL":"sig-sell","HOLD":"sig-hold"}.get(signal,"sig-hold")
 sig_emoji = {"BUY":"🟢 BUY","SELL":"🔴 SELL","HOLD":"🟡 HOLD"}.get(signal, signal)
@@ -579,7 +584,9 @@ st.markdown("<div class='sec'>📊 Forecast de precios por calibre</div>", unsaf
 
 dates    = fc["date_clean"]; max_d = dates.max()
 fresh_fc = fc[dates == max_d].copy()
+fresh_fc = fresh_fc[fresh_fc["quality"]=="BASE"].drop_duplicates(subset=["size"]) if "quality" in fresh_fc.columns and not fresh_fc[fresh_fc["quality"]=="BASE"].empty else fresh_fc.drop_duplicates(subset=["size"])
 stale_fc = fc[dates < max_d].copy()
+stale_fc = stale_fc[stale_fc["quality"]=="BASE"].drop_duplicates(subset=["size"]) if "quality" in stale_fc.columns and not stale_fc[stale_fc["quality"]=="BASE"].empty else stale_fc.drop_duplicates(subset=["size"])
 
 def render_fc_cards(rows_df, stale=False):
     if rows_df.empty: return
@@ -661,7 +668,8 @@ def render_table(rows_df, banner=""):
     if banner:
         html += f"<div style='background:#fff8e1;padding:7px 14px;font-size:11px;color:#bf360c;font-weight:700;border-bottom:1px solid #ffe082'>⚠ {banner}</div>"
     html += ("<div class='th'><div>Calibre</div><div>Precio</div><div>Rango hoy</div>"
-             "<div>Tendencia</div><div>Horizontes</div><div>Acierto modelo</div><div>Ayer</div></div>")
+             "<div>Tendencia</div><div>Horizontes</div></div>")
+    rows_df = rows_df.drop_duplicates(subset=["size","quality"])
     for _, row in rows_df.iterrows():
         size = int(row["size"]); lp=float(row["last_official_price"])
         mae  = float(row.get("mae_1d",1.3)); est=bool(row.get("estimated_price",False))
@@ -727,13 +735,29 @@ def render_table(rows_df, banner=""):
     html += "</div>"
     return html
 
-if not fresh_fc.empty:
-    st.markdown(render_table(fresh_fc), unsafe_allow_html=True)
+fresh_sizes = set(fresh_fc["size"].tolist()) if not fresh_fc.empty else set()
+stale_fc2 = pd.DataFrame()
 if not stale_fc.empty:
-    est_mask = (stale_fc["estimated_price"]==True) if "estimated_price" in stale_fc.columns else pd.Series([False]*len(stale_fc))
-    est_rows=stale_fc[est_mask]; old_rows=stale_fc[~est_mask]
+    stale_fc2 = stale_fc[~stale_fc["size"].isin(fresh_sizes)]
+
+if not fresh_fc.empty and not stale_fc2.empty:
+    col_left, col_right = st.columns(2)
+    with col_left:
+        st.markdown(render_table(fresh_fc), unsafe_allow_html=True)
+    with col_right:
+        est_mask = (stale_fc2["estimated_price"]==True) if "estimated_price" in stale_fc2.columns else pd.Series([False]*len(stale_fc2))
+        est_rows=stale_fc2[est_mask]; old_rows=stale_fc2[~est_mask]
+        if not est_rows.empty:
+            st.markdown(render_table(est_rows,"Calibres estimados — USDA no los reportó recientemente"), unsafe_allow_html=True)
+        if not old_rows.empty:
+            st.markdown(render_table(old_rows,"Sin datos recientes de USDA"), unsafe_allow_html=True)
+elif not fresh_fc.empty:
+    st.markdown(render_table(fresh_fc), unsafe_allow_html=True)
+elif not stale_fc2.empty:
+    est_mask = (stale_fc2["estimated_price"]==True) if "estimated_price" in stale_fc2.columns else pd.Series([False]*len(stale_fc2))
+    est_rows=stale_fc2[est_mask]; old_rows=stale_fc2[~est_mask]
     if not est_rows.empty:
-        st.markdown(render_table(est_rows,"Calibres estimados desde adyacente — USDA no los reportó recientemente"), unsafe_allow_html=True)
+        st.markdown(render_table(est_rows,"Calibres estimados — USDA no los reportó recientemente"), unsafe_allow_html=True)
     if not old_rows.empty:
         st.markdown(render_table(old_rows,"Sin datos recientes de USDA"), unsafe_allow_html=True)
 
@@ -745,7 +769,7 @@ st.markdown("---")
 # SECCIÓN 5 — SEÑALES (lluvia, movimiento, FX) — igual que V14
 # ══════════════════════════════════════════════════════════════════════════════
 st.markdown("<div class='sec'>📡 Señales del mercado</div>", unsafe_allow_html=True)
-c1, c2, c3 = st.columns(3)
+c1, c2, c3, c4 = st.columns(4)
 
 def render_rain_bars(key, path):
     if not path.exists(): path = RAIN_FALLBACK
@@ -874,8 +898,14 @@ with c2:
 mtt=mtt_est(); fx_val="—"; fx_cls="c-b"; fx_msg=""; mtt_html=""; fx_date_s="—"
 if not fx_df.empty:
     lf=fx_df.sort_values("date").iloc[-1]
-    usdmxn=float(lf["usd_mxn"]); chg7=float(lf.get("usd_mxn_chg_7d",0) or 0)
-    fx_date_s=pd.to_datetime(lf["date"]).strftime("%d %b"); fx_val=f"{usdmxn:.4f}"
+    try: usdmxn=float(lf["usd_mxn"])
+    except: usdmxn=0.0
+    try: chg7=float(lf.get("usd_mxn_chg_7d",0) or 0)
+    except: chg7=0.0
+    if pd.isna(chg7): chg7=0.0
+    try: fx_date_s=pd.to_datetime(lf["date"]).strftime("%d %b %Y")
+    except: fx_date_s="—"
+    fx_val=f"{usdmxn:.4f}" if usdmxn>0 else "—"
     if   chg7>0.5:  fx_cls,fx_msg="c-r",f"Peso débil ({chg7:+.2f}) → exportación ↑ → presión bajista"
     elif chg7<-0.5: fx_cls,fx_msg="c-g",f"Peso fuerte ({chg7:+.2f}) → exportación ↓ → menos oferta"
     else:            fx_cls,fx_msg="c-b",f"Estable ({chg7:+.4f} en 7d) — sin presión adicional"
@@ -887,6 +917,36 @@ with c3:
         f"<div class='sig-val {fx_cls}'>{fx_val}</div>"
         f"<div class='sig-desc'>{fx_msg}</div></div>",
         unsafe_allow_html=True)
+
+# ── TEMPERATURA CIUDADES DESTINO ─────────────────────────────────────────────
+with c4:
+    destw_inner = ""
+    if not destw_df.empty:
+        try:
+            fw = destw_df[destw_df["tipo"]=="forecast"].copy()
+            fw["date"] = pd.to_datetime(fw["date"])
+            next7 = fw[fw["date"] <= pd.Timestamp.today() + timedelta(days=7)]
+            if not next7.empty:
+                avg_by_city = next7.groupby("city")["temp_max"].mean()
+                hottest = avg_by_city.idxmax(); hottest_t = avg_by_city.max()
+                if hottest_t>=30:   d_msg,d_cls = f"🔥 {hottest} {hottest_t:.0f}°C — demanda ↑↑","c-g"
+                elif hottest_t>=22: d_msg,d_cls = f"☀️ Templado — demanda normal","c-b"
+                else:               d_msg,d_cls = f"❄️ Frío — demanda puede bajar","c-r"
+                rows_w = ""
+                for city in ["Chicago","Atlanta","New York","Los Angeles","Houston"]:
+                    cd = next7[next7["city"]==city]
+                    if not cd.empty:
+                        avg_t = cd["temp_max"].mean()
+                        em2 = "🔥" if avg_t>=30 else ("☀️" if avg_t>=22 else "❄️")
+                        rows_w += f"<tr><td>{city}</td><td>{avg_t:.0f}°C</td><td>{em2}</td></tr>"
+                destw_inner = (f"<div class='sig-val {d_cls}'>{hottest_t:.0f}°C</div>"
+                               f"<div class='sig-desc'>{d_msg}</div>"
+                               f"<table class='mt'><tr><th>Ciudad</th><th>Máx 7d</th><th></th></tr>{rows_w}</table>")
+        except Exception as e:
+            destw_inner = f"<div class='sig-desc'>Error: {e}</div>"
+    if not destw_inner:
+        destw_inner = "<div class='sig-desc'>Sin datos</div>"
+    st.markdown(f"<div class='sig'><div class='sig-lbl'>🌡️ Temperatura destinos (próx. 7d)</div>{destw_inner}</div>", unsafe_allow_html=True)
 
 st.markdown("---")
 
@@ -943,20 +1003,20 @@ if mkt_data:
             bg="#f1f8e9" if m>2 else ("#fff8e1" if m>0 else "#ffebee")
             days_txt="hoy" if r["days_ago"]<=1 else f"hace {r['days_ago']}d"
             tone_s=r["tone"][:40] if r["tone"] and r["tone"]!="nan" else ""
+            try:
+                last_date_t = df_t["date"].max()
+                fecha_dato = pd.to_datetime(last_date_t).strftime("%d %b %Y")
+            except: fecha_dato = "—"
             rows_html+=(f"<tr style='background:{bg}'>"
                         f"<td style='font-weight:700;color:#1a237e;font-size:13px'>{r['mercado']}</td>"
-                        f"<td style='color:#37474f;font-size:13px'>${r['terminal']:.2f}</td>"
-                        f"<td style='color:#546e7a;font-size:13px'>−${r['flete']:.2f}</td>"
-                        f"<td style='font-weight:800;color:{mc2};font-size:13px'>{m:+.2f}</td>"
-                        f"<td style='color:{mc2};font-weight:700;font-size:13px'>{mi}</td>"
-                        f"<td style='color:#90a4ae;font-size:11px'>{tone_s}</td>"
-                        f"<td style='color:#b0bec5;font-size:11px'>{days_txt}</td></tr>")
+                        f"<td style='font-size:15px;font-weight:800;color:#0d1b6e'>${r['terminal']:.2f}</td>"
+                        f"<td style='color:#546e7a;font-size:12px'>{tone_s[:60]}</td>"
+                        f"<td style='color:#90a4ae;font-size:11px'>{fecha_dato}</td></tr>")
         st.markdown(
             "<div style='background:#fff;border-radius:10px;border:1px solid #dde1ea;"
             "overflow:hidden;margin-bottom:8px'>"
             "<table class='mt' style='width:100%'>"
-            "<tr><th>Mercado</th><th>Precio terminal</th><th>Flete/caja</th>"
-            "<th>Margen neto</th><th>Señal</th><th>Tono USDA</th><th>Dato</th></tr>"
+            "<tr><th>Mercado</th><th>Precio terminal</th><th>Tono USDA</th><th>Fecha dato</th></tr>"
             +rows_html+"</table></div>",
             unsafe_allow_html=True)
     
