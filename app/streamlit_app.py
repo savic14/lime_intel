@@ -205,7 +205,10 @@ def load():
         if not df.empty and "date" in df.columns:
             df["date"] = pd.to_datetime(df["date"], errors="coerce")
     if not fx.empty:
-        fx = fx.dropna(subset=["date","usd_mxn"]).sort_values("date").reset_index(drop=True)
+        fx = fx.dropna(subset=["usd_mxn"])
+        fx = fx[pd.to_datetime(fx["date"], errors="coerce").notna()]
+        fx["date"] = pd.to_datetime(fx["date"], errors="coerce")
+        fx = fx.sort_values("date").reset_index(drop=True)
     # Limpiar filas con fecha NaT en FX
     if not fx.empty:
         fx = fx.dropna(subset=["date","usd_mxn"]).sort_values("date").reset_index(drop=True)
@@ -592,7 +595,7 @@ stale_fc = stale_fc[stale_fc["quality"]=="BASE"].drop_duplicates(subset=["size"]
 
 def render_fc_cards(rows_df, stale=False):
     if rows_df.empty: return
-    n_cols = min(len(rows_df), 4)
+    n_cols = 3
     cols   = st.columns(n_cols)
     for idx, (_, row) in enumerate(rows_df.iterrows()):
         size    = int(row["size"])
@@ -950,34 +953,6 @@ with c4:
         destw_inner = "<div class='sig-desc'>Sin datos</div>"
     st.markdown(f"<div class='sig'><div class='sig-lbl'>🌡️ Temperatura destinos (próx. 7d)</div>{destw_inner}</div>", unsafe_allow_html=True)
 
-with c4:
-    destw_inner=""
-    if not destw_df.empty:
-        try:
-            fw=destw_df[destw_df["tipo"]=="forecast"].copy()
-            fw["date"]=pd.to_datetime(fw["date"])
-            next7=fw[fw["date"]<=pd.Timestamp.today()+timedelta(days=7)]
-            if not next7.empty:
-                avg_by_city=next7.groupby("city")["temp_max"].mean()
-                hottest=avg_by_city.idxmax(); hottest_t=avg_by_city.max()
-                if hottest_t>=30:   d_msg,d_cls=f"🔥 {hottest} {hottest_t:.0f}°C","c-g"
-                elif hottest_t>=22: d_msg,d_cls="☀️ Templado — demanda normal","c-b"
-                else:               d_msg,d_cls="❄️ Frío — demanda puede bajar","c-r"
-                rows_w=""
-                for city in ["Chicago","Atlanta","New York","Los Angeles","Houston"]:
-                    cd=next7[next7["city"]==city]
-                    if not cd.empty:
-                        avg_t=cd["temp_max"].mean()
-                        em2="🔥" if avg_t>=30 else ("☀️" if avg_t>=22 else "❄️")
-                        rows_w+=f"<tr><td>{city}</td><td>{avg_t:.0f}°C</td><td>{em2}</td></tr>"
-                destw_inner=(f"<div class='sig-val {d_cls}'>{hottest_t:.0f}°C</div>"
-                             f"<div class='sig-desc'>{d_msg}</div>"
-                             f"<table class='mt'><tr><th>Ciudad</th><th>Máx 7d</th><th></th></tr>{rows_w}</table>")
-        except Exception as e:
-            destw_inner=f"<div class='sig-desc'>Error: {e}</div>"
-    if not destw_inner:
-        destw_inner="<div class='sig-desc'>Sin datos</div>"
-    st.markdown(f"<div class='sig'><div class='sig-lbl'>🌡️ Temperatura destinos (próx. 7d)</div>{destw_inner}</div>",unsafe_allow_html=True)
 
 st.markdown("---")
 
