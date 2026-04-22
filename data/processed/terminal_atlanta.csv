@@ -742,16 +742,16 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-04-17,Atlanta,250,Colombia,BASE,55.0,56.0,,,56.0,MARKET BARELY STEADY,occasional higher/lower
 2026-04-20,Atlanta,110,Mexico,BASE,83.0,84.0,,,84.0,MARKET LOWER,
 2026-04-20,Atlanta,150,Mexico,Fine Appearance,74.0,75.0,,,75.0,MARKET LOWER,occasional lower
-2026-04-20,Atlanta,150,Mexico,Fair Quality,50.0,51.0,,,51.0,MARKET LOWER,poorer quality and condition lower
 2026-04-20,Atlanta,150,Mexico,BASE,66.0,69.0,67.0,68.0,68.0,MARKET LOWER,occasional lower
+2026-04-20,Atlanta,150,Mexico,Fair Quality,50.0,51.0,,,51.0,MARKET LOWER,poorer quality and condition lower
+2026-04-20,Atlanta,175,Mexico,BASE,67.0,69.0,67.0,68.0,68.0,MARKET LOWER,occasional higher/lower
 2026-04-20,Atlanta,175,Mexico,Fine Appearance,72.0,73.0,,,73.0,MARKET LOWER,few as high as 79.00
 2026-04-20,Atlanta,175,Mexico,Fair Quality,49.0,50.0,,,50.0,MARKET LOWER,poorer quality and condition lower
-2026-04-20,Atlanta,175,Mexico,BASE,67.0,69.0,67.0,68.0,68.0,MARKET LOWER,occasional higher/lower
 2026-04-20,Atlanta,200,Mexico,Fine Appearance,65.0,65.0,,,65.0,MARKET LOWER,occasional higher/lower
-2026-04-20,Atlanta,200,Mexico,BASE,66.0,69.0,67.0,68.0,68.0,MARKET LOWER,
 2026-04-20,Atlanta,200,Mexico,Fair Quality,46.0,47.0,,,47.0,MARKET LOWER,poorer quality and condition lower
-2026-04-20,Atlanta,230,Mexico,BASE,50.0,52.0,,,52.0,MARKET LOWER,occasional lower
+2026-04-20,Atlanta,200,Mexico,BASE,66.0,69.0,67.0,68.0,68.0,MARKET LOWER,
 2026-04-20,Atlanta,230,Mexico,Fine Appearance,57.0,57.0,,,57.0,MARKET LOWER,
+2026-04-20,Atlanta,230,Mexico,BASE,50.0,52.0,,,52.0,MARKET LOWER,occasional lower
 2026-04-20,Atlanta,250,Colombia,BASE,48.0,48.0,,,48.0,MARKET LOWER,occasional higher/lower
 2026-04-21,Atlanta,110,Mexico,BASE,83.0,84.0,,,84.0,MARKET ABOUT STEADY,
 2026-04-21,Atlanta,150,Mexico,BASE,66.0,69.0,67.0,68.0,68.0,MARKET ABOUT STEADY,occasional lower
