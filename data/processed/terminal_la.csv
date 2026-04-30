@@ -722,3 +722,13 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-04-29,Los Angeles,230,Mexico,Fine Appearance,50.0,,,,,MARKET STEADY,
 2026-04-29,Los Angeles,230,Mexico,BASE,45.0,,,,,MARKET STEADY,
 2026-04-29,Los Angeles,250,Mexico,BASE,,,,,,MARKET STEADY,insufficient to quote
+2026-04-30,Los Angeles,150,Mexico,BASE,50.0,55.0,,,55.0,MARKET STEADY,
+2026-04-30,Los Angeles,150,Mexico,Fine Appearance,68.0,70.0,,,70.0,MARKET STEADY,
+2026-04-30,Los Angeles,175,Mexico,Fine Appearance,68.0,70.0,,,70.0,MARKET STEADY,
+2026-04-30,Los Angeles,175,Mexico,BASE,50.0,55.0,,,55.0,MARKET STEADY,
+2026-04-30,Los Angeles,200,Mexico,Fair Quality,35.0,38.0,,,38.0,MARKET STEADY,
+2026-04-30,Los Angeles,200,Mexico,BASE,45.0,50.0,,,50.0,MARKET STEADY,
+2026-04-30,Los Angeles,200,Mexico,Fine Appearance,62.0,65.0,,,65.0,MARKET STEADY,
+2026-04-30,Los Angeles,230,Mexico,BASE,45.0,,,,,MARKET STEADY,
+2026-04-30,Los Angeles,230,Mexico,Fine Appearance,50.0,,,,,MARKET STEADY,
+2026-04-30,Los Angeles,250,Mexico,BASE,,,,,,MARKET STEADY,insufficient to quote
