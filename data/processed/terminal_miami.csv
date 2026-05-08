@@ -490,3 +490,7 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-05-07,Miami,150,Peru,BASE,44.0,45.0,,,45.0,MARKET ABOUT STEADY,Occasional Lower
 2026-05-07,Miami,175,Peru,BASE,44.0,45.0,,,45.0,MARKET ABOUT STEADY,
 2026-05-07,Miami,230,Colombia,BASE,40.0,42.0,,,42.0,MARKET ABOUT STEADY,
+2026-05-08,Miami,110,Colombia,BASE,50.0,52.0,,,52.0,MARKET STEADY,Few High as 55.00
+2026-05-08,Miami,150,Peru,BASE,44.0,45.0,,,45.0,MARKET STEADY,Occasional Lower
+2026-05-08,Miami,175,Peru,BASE,44.0,45.0,,,45.0,MARKET STEADY,
+2026-05-08,Miami,230,Colombia,BASE,40.0,42.0,,,42.0,MARKET STEADY,

@@ -639,3 +639,12 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-05-07,Chicago,230,Mexico,Fair Quality,40.0,40.0,,,40.0,MARKET 40 LB CARTONS SLIGHTLY HIGHER; OTHERS STEADY,
 2026-05-07,Chicago,230,Mexico,BASE,44.0,46.0,,,46.0,MARKET 40 LB CARTONS SLIGHTLY HIGHER; OTHERS STEADY,occasional higher and lower
 2026-05-07,Chicago,250,Mexico,BASE,40.0,42.0,,,42.0,MARKET 40 LB CARTONS SLIGHTLY HIGHER; OTHERS STEADY,
+2026-05-08,Chicago,110,Mexico,BASE,54.0,56.0,,,56.0,MARKET STEADY,Occasional Higher
+2026-05-08,Chicago,150,Mexico,BASE,54.0,56.0,,,56.0,MARKET STEADY,
+2026-05-08,Chicago,175,Mexico,BASE,48.0,48.0,,,48.0,MARKET STEADY,
+2026-05-08,Chicago,175,Mexico,Fine Appearance,56.5,56.5,,,56.5,MARKET STEADY,
+2026-05-08,Chicago,200,Mexico,BASE,48.0,48.0,,,48.0,MARKET STEADY,
+2026-05-08,Chicago,200,Mexico,Fine Appearance,50.0,50.0,,,50.0,MARKET STEADY,
+2026-05-08,Chicago,230,Mexico,BASE,44.0,46.0,,,46.0,MARKET STEADY,occasional higher and lower
+2026-05-08,Chicago,230,Mexico,Fair Quality,40.0,40.0,,,40.0,MARKET STEADY,
+2026-05-08,Chicago,250,Mexico,BASE,40.0,42.0,,,42.0,MARKET STEADY,
