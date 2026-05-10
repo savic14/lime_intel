@@ -221,87 +221,87 @@ date,city,temp_max,temp_min,precip_mm,tipo
 2026-05-09,Los Angeles,25.4,14.6,0.0,forecast
 2026-05-09,Miami,31.3,23.5,0.0,forecast
 2026-05-09,New York,18.6,10.9,0.0,forecast
-2026-05-10,Atlanta,26.7,15.2,0.0,forecast
-2026-05-10,Chicago,14.6,6.3,0.0,forecast
-2026-05-10,Houston,29.6,23.1,0.0,forecast
-2026-05-10,Los Angeles,26.4,14.0,0.0,forecast
-2026-05-10,Miami,31.4,24.4,0.0,forecast
-2026-05-10,New York,20.7,11.1,11.2,forecast
-2026-05-11,Atlanta,26.3,16.0,0.0,forecast
-2026-05-11,Chicago,10.4,6.1,0.0,forecast
-2026-05-11,Houston,23.2,19.0,6.8,forecast
-2026-05-11,Los Angeles,26.3,14.0,0.0,forecast
-2026-05-11,Miami,31.0,23.6,0.0,forecast
-2026-05-11,New York,17.9,8.9,0.4,forecast
-2026-05-12,Atlanta,25.6,15.4,0.0,forecast
-2026-05-12,Chicago,20.5,5.6,3.1,forecast
-2026-05-12,Houston,31.0,18.6,0.0,forecast
-2026-05-12,Los Angeles,25.9,13.4,0.0,forecast
-2026-05-12,Miami,30.4,22.8,43.95,forecast
-2026-05-12,New York,18.6,5.7,0.0,forecast
-2026-05-13,Atlanta,29.0,15.7,0.1,forecast
-2026-05-13,Chicago,17.1,9.7,0.0,forecast
-2026-05-13,Houston,33.6,22.1,0.0,forecast
-2026-05-13,Los Angeles,25.3,17.5,0.0,forecast
-2026-05-13,Miami,29.0,24.6,3.3,forecast
-2026-05-13,New York,16.4,11.3,1.1,forecast
-2026-05-14,Atlanta,25.6,15.5,0.0,forecast
-2026-05-14,Chicago,14.4,7.3,0.0,forecast
-2026-05-14,Houston,32.7,22.7,0.0,forecast
-2026-05-14,Los Angeles,24.2,16.1,0.0,forecast
-2026-05-14,Miami,29.5,26.2,2.7,forecast
-2026-05-14,New York,19.0,10.6,2.0,forecast
-2026-05-15,Atlanta,28.2,14.2,0.0,forecast
-2026-05-15,Chicago,26.4,13.4,1.5,forecast
-2026-05-15,Houston,33.0,22.3,0.0,forecast
-2026-05-15,Los Angeles,25.8,16.7,0.0,forecast
-2026-05-15,Miami,29.4,27.0,0.7,forecast
-2026-05-15,New York,20.0,7.7,0.0,forecast
-2026-05-16,Atlanta,30.5,17.6,0.0,forecast
-2026-05-16,Chicago,28.2,18.9,4.0,forecast
-2026-05-16,Houston,33.2,21.9,0.0,forecast
-2026-05-16,Los Angeles,26.1,18.5,0.0,forecast
-2026-05-16,Miami,28.8,26.8,0.0,forecast
-2026-05-16,New York,24.5,15.3,0.3,forecast
-2026-05-17,Atlanta,32.9,19.3,0.0,forecast
-2026-05-17,Chicago,22.7,15.7,0.2,forecast
-2026-05-17,Houston,33.5,22.4,0.0,forecast
-2026-05-17,Los Angeles,27.1,19.2,0.0,forecast
-2026-05-17,Miami,29.4,26.6,0.0,forecast
-2026-05-17,New York,21.4,17.2,0.0,forecast
-2026-05-18,Atlanta,33.9,20.5,0.0,forecast
-2026-05-18,Chicago,18.8,11.1,0.0,forecast
-2026-05-18,Houston,33.2,23.7,0.0,forecast
-2026-05-18,Los Angeles,28.9,19.1,0.0,forecast
-2026-05-18,Miami,29.1,27.2,0.0,forecast
-2026-05-18,New York,24.9,17.3,8.7,forecast
-2026-05-19,Atlanta,34.4,22.4,0.0,forecast
-2026-05-19,Chicago,20.3,10.3,3.3,forecast
-2026-05-19,Houston,34.8,25.1,0.0,forecast
-2026-05-19,Los Angeles,26.2,18.5,0.0,forecast
-2026-05-19,Miami,28.6,27.1,0.0,forecast
-2026-05-19,New York,22.7,14.1,0.0,forecast
-2026-05-20,Atlanta,34.6,22.3,0.0,forecast
-2026-05-20,Chicago,29.8,18.2,0.0,forecast
-2026-05-20,Houston,35.3,24.7,0.0,forecast
-2026-05-20,Los Angeles,21.3,17.8,0.0,forecast
-2026-05-20,Miami,28.5,27.0,0.3,forecast
-2026-05-20,New York,22.3,15.7,0.0,forecast
-2026-05-21,Atlanta,33.7,22.6,0.0,forecast
-2026-05-21,Chicago,28.8,18.6,8.6,forecast
-2026-05-21,Houston,35.0,24.5,0.0,forecast
-2026-05-21,Los Angeles,20.7,16.1,0.0,forecast
-2026-05-21,Miami,28.7,26.4,0.3,forecast
-2026-05-21,New York,27.3,17.7,0.0,forecast
-2026-05-22,Atlanta,35.4,21.9,0.0,forecast
-2026-05-22,Chicago,17.6,9.9,3.4,forecast
-2026-05-22,Houston,34.8,24.2,0.0,forecast
-2026-05-22,Los Angeles,20.6,14.0,0.0,forecast
-2026-05-22,Miami,29.2,26.5,0.9,forecast
-2026-05-22,New York,27.8,20.5,0.9,forecast
-2026-05-23,Atlanta,35.9,22.3,0.0,forecast
-2026-05-23,Chicago,19.4,11.2,0.0,forecast
-2026-05-23,Houston,35.3,24.2,0.0,forecast
-2026-05-23,Los Angeles,24.0,15.2,0.0,forecast
-2026-05-23,Miami,29.5,27.1,0.3,forecast
-2026-05-23,New York,23.7,15.9,0.0,forecast
+2026-05-10,Atlanta,27.9,15.2,0.0,forecast
+2026-05-10,Chicago,14.5,6.3,0.0,forecast
+2026-05-10,Houston,29.9,23.6,0.0,forecast
+2026-05-10,Los Angeles,26.5,14.0,0.0,forecast
+2026-05-10,Miami,32.0,25.3,0.0,forecast
+2026-05-10,New York,23.0,11.1,0.7,forecast
+2026-05-11,Atlanta,27.1,16.1,0.0,forecast
+2026-05-11,Chicago,10.8,6.1,0.0,forecast
+2026-05-11,Houston,26.4,19.7,0.0,forecast
+2026-05-11,Los Angeles,26.0,14.3,0.0,forecast
+2026-05-11,Miami,30.9,25.0,0.0,forecast
+2026-05-11,New York,18.5,8.1,0.0,forecast
+2026-05-12,Atlanta,25.8,15.8,0.0,forecast
+2026-05-12,Chicago,21.7,5.7,2.25,forecast
+2026-05-12,Houston,32.5,18.3,0.0,forecast
+2026-05-12,Los Angeles,26.0,12.9,0.0,forecast
+2026-05-12,Miami,30.6,23.8,11.8,forecast
+2026-05-12,New York,18.4,6.3,0.0,forecast
+2026-05-13,Atlanta,29.0,15.5,0.0,forecast
+2026-05-13,Chicago,13.7,9.9,0.0,forecast
+2026-05-13,Houston,34.8,23.3,0.0,forecast
+2026-05-13,Los Angeles,24.3,17.1,0.0,forecast
+2026-05-13,Miami,29.2,26.1,4.6,forecast
+2026-05-13,New York,16.5,11.7,1.1,forecast
+2026-05-14,Atlanta,25.7,14.7,0.0,forecast
+2026-05-14,Chicago,12.2,7.4,0.0,forecast
+2026-05-14,Houston,33.8,23.6,0.0,forecast
+2026-05-14,Los Angeles,23.5,15.9,0.0,forecast
+2026-05-14,Miami,29.5,25.5,5.8,forecast
+2026-05-14,New York,19.6,9.6,4.5,forecast
+2026-05-15,Atlanta,27.2,13.1,0.0,forecast
+2026-05-15,Chicago,23.2,11.3,1.2,forecast
+2026-05-15,Houston,33.2,22.8,0.0,forecast
+2026-05-15,Los Angeles,23.5,16.2,0.0,forecast
+2026-05-15,Miami,29.5,26.0,0.0,forecast
+2026-05-15,New York,20.0,8.6,0.0,forecast
+2026-05-16,Atlanta,31.6,17.0,0.0,forecast
+2026-05-16,Chicago,26.5,14.0,4.0,forecast
+2026-05-16,Houston,33.1,22.5,0.0,forecast
+2026-05-16,Los Angeles,26.5,18.2,0.0,forecast
+2026-05-16,Miami,28.6,27.0,0.6,forecast
+2026-05-16,New York,22.8,13.9,0.0,forecast
+2026-05-17,Atlanta,31.4,18.8,0.0,forecast
+2026-05-17,Chicago,22.6,14.3,1.4,forecast
+2026-05-17,Houston,34.3,22.2,0.0,forecast
+2026-05-17,Los Angeles,26.5,17.9,0.0,forecast
+2026-05-17,Miami,28.8,27.0,1.8,forecast
+2026-05-17,New York,29.8,18.0,0.0,forecast
+2026-05-18,Atlanta,33.9,20.7,0.0,forecast
+2026-05-18,Chicago,23.9,13.8,0.4,forecast
+2026-05-18,Houston,34.1,24.3,0.0,forecast
+2026-05-18,Los Angeles,27.4,17.6,0.0,forecast
+2026-05-18,Miami,29.8,26.9,0.0,forecast
+2026-05-18,New York,26.7,19.0,0.9,forecast
+2026-05-19,Atlanta,35.0,22.0,0.0,forecast
+2026-05-19,Chicago,22.0,11.5,0.8,forecast
+2026-05-19,Houston,35.1,24.7,0.0,forecast
+2026-05-19,Los Angeles,26.1,18.0,0.0,forecast
+2026-05-19,Miami,28.9,26.9,0.0,forecast
+2026-05-19,New York,23.1,19.8,3.2,forecast
+2026-05-20,Atlanta,33.3,23.1,1.8,forecast
+2026-05-20,Chicago,14.4,8.9,1.2,forecast
+2026-05-20,Houston,34.7,25.0,0.0,forecast
+2026-05-20,Los Angeles,24.6,18.0,0.0,forecast
+2026-05-20,Miami,29.1,27.1,0.3,forecast
+2026-05-20,New York,28.2,19.6,0.4,forecast
+2026-05-21,Atlanta,30.8,22.1,0.3,forecast
+2026-05-21,Chicago,21.4,9.2,0.0,forecast
+2026-05-21,Houston,35.4,24.2,0.0,forecast
+2026-05-21,Los Angeles,24.5,17.2,0.0,forecast
+2026-05-21,Miami,29.5,27.2,0.0,forecast
+2026-05-21,New York,19.9,13.5,4.5,forecast
+2026-05-22,Atlanta,33.5,21.5,0.3,forecast
+2026-05-22,Chicago,18.7,13.1,0.0,forecast
+2026-05-22,Houston,35.7,24.1,0.0,forecast
+2026-05-22,Los Angeles,24.9,17.0,0.0,forecast
+2026-05-22,Miami,30.0,27.5,0.0,forecast
+2026-05-22,New York,23.7,15.0,0.0,forecast
+2026-05-23,Atlanta,35.1,23.4,0.0,forecast
+2026-05-23,Chicago,20.6,10.2,2.4,forecast
+2026-05-23,Houston,37.0,24.3,0.0,forecast
+2026-05-23,Los Angeles,25.6,17.1,0.0,forecast
+2026-05-23,Miami,29.9,27.6,0.0,forecast
+2026-05-23,New York,19.0,14.3,0.0,forecast
