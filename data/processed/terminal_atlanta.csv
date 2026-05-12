@@ -932,3 +932,11 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-05-11,Atlanta,200,Mexico,Fine Appearance,50.0,51.0,,,51.0,,occasional higher/lower
 2026-05-11,Atlanta,230,Mexico,Fine Appearance,47.0,48.0,,,48.0,,
 2026-05-11,Atlanta,230,Mexico,BASE,40.0,43.0,41.0,42.0,42.0,,occasional lower
+2026-05-12,Atlanta,110,Mexico,BASE,60.0,60.0,,,60.0,"MARKET SEEDLESS TYPE ABOUT STEADY, SEEDED TYPE STEADY",
+2026-05-12,Atlanta,150,Mexico,Fine Appearance,52.0,54.0,,,54.0,"MARKET SEEDLESS TYPE ABOUT STEADY, SEEDED TYPE STEADY",occasional lower
+2026-05-12,Atlanta,150,Mexico,BASE,47.0,49.0,48.0,49.0,49.0,"MARKET SEEDLESS TYPE ABOUT STEADY, SEEDED TYPE STEADY",
+2026-05-12,Atlanta,175,Mexico,Fine Appearance,52.0,53.0,,,53.0,"MARKET SEEDLESS TYPE ABOUT STEADY, SEEDED TYPE STEADY",
+2026-05-12,Atlanta,175,Mexico,BASE,49.0,51.0,50.0,50.5,50.5,"MARKET SEEDLESS TYPE ABOUT STEADY, SEEDED TYPE STEADY",occasional higher/lower
+2026-05-12,Atlanta,200,Mexico,BASE,45.0,48.0,46.0,47.0,47.0,"MARKET SEEDLESS TYPE ABOUT STEADY, SEEDED TYPE STEADY",
+2026-05-12,Atlanta,200,Mexico,Fine Appearance,51.0,52.0,,,52.0,"MARKET SEEDLESS TYPE ABOUT STEADY, SEEDED TYPE STEADY",occasional higher/lower
+2026-05-12,Atlanta,230,Mexico,BASE,46.0,48.0,47.0,48.0,48.0,"MARKET SEEDLESS TYPE ABOUT STEADY, SEEDED TYPE STEADY",occasional lower
