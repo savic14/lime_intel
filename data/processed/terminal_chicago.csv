@@ -713,3 +713,9 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-05-22,Chicago,200,Mexico,BASE,68.0,68.0,,,68.0,MARKET STEADY,
 2026-05-22,Chicago,230,Mexico,BASE,44.0,46.0,,,46.0,MARKET STEADY,
 2026-05-22,Chicago,250,Mexico,BASE,42.0,42.0,,,42.0,MARKET STEADY,
+2026-05-26,Chicago,110,Mexico,BASE,64.0,66.0,,,66.0,,
+2026-05-26,Chicago,150,Mexico,BASE,58.0,60.0,,,60.0,,Few Low as 54.00
+2026-05-26,Chicago,175,Mexico,BASE,58.0,58.0,,,58.0,,
+2026-05-26,Chicago,200,Mexico,BASE,48.0,51.0,50.0,50.0,50.0,,
+2026-05-26,Chicago,230,Mexico,BASE,44.0,46.0,,,46.0,,
+2026-05-26,Chicago,250,Mexico,BASE,42.0,42.0,,,42.0,,
