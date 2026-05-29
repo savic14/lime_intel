@@ -744,3 +744,12 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-05-28,New York,200,Colombia,BASE,40.0,42.0,,,42.0,MARKET SLIGHTLY LOWER,
 2026-05-28,New York,200,Mexico,BASE,42.0,44.0,,,44.0,MARKET SLIGHTLY LOWER,
 2026-05-28,New York,230,Mexico,BASE,38.0,40.0,,,40.0,MARKET SLIGHTLY LOWER,few 38.00
+2026-05-29,New York,150,Mexico,BASE,42.0,44.0,,,44.0,MARKET ABOUT STEADY,occasional lower
+2026-05-29,New York,150,Colombia,BASE,40.0,42.0,,,42.0,MARKET ABOUT STEADY,occasional lower
+2026-05-29,New York,150,Honduras,Fine Appearance,52.0,54.0,,,54.0,MARKET ABOUT STEADY,
+2026-05-29,New York,175,Mexico,BASE,42.0,44.0,,,44.0,MARKET ABOUT STEADY,occasional higher
+2026-05-29,New York,175,Colombia,BASE,40.0,42.0,,,42.0,MARKET ABOUT STEADY,occasional lower
+2026-05-29,New York,175,Honduras,Fine Appearance,54.0,56.0,,,56.0,MARKET ABOUT STEADY,
+2026-05-29,New York,200,Colombia,BASE,40.0,42.0,,,42.0,MARKET ABOUT STEADY,
+2026-05-29,New York,200,Mexico,BASE,42.0,44.0,,,44.0,MARKET ABOUT STEADY,
+2026-05-29,New York,230,Mexico,BASE,38.0,40.0,,,40.0,MARKET ABOUT STEADY,few 38.00
