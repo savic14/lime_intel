@@ -622,3 +622,10 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-06-08,Miami,175,Peru,BASE,30.0,33.0,,,33.0,MARKET MUCH LOWER,
 2026-06-08,Miami,200,Colombia,BASE,30.0,32.0,,,32.0,MARKET MUCH LOWER,occasional higher
 2026-06-08,Miami,230,Colombia,BASE,30.0,32.0,,,32.0,MARKET MUCH LOWER,occasional higher
+2026-06-09,Miami,110,Peru,BASE,30.0,33.0,,,33.0,MARKET ABOUT STEADY,
+2026-06-09,Miami,110,Colombia,BASE,30.0,33.0,,,33.0,MARKET ABOUT STEADY,occasional higher
+2026-06-09,Miami,150,Colombia,BASE,30.0,33.0,,,33.0,MARKET ABOUT STEADY,occasional higher
+2026-06-09,Miami,150,Peru,BASE,30.0,33.0,,,33.0,MARKET ABOUT STEADY,
+2026-06-09,Miami,175,Peru,BASE,30.0,33.0,,,33.0,MARKET ABOUT STEADY,
+2026-06-09,Miami,200,Colombia,BASE,30.0,32.0,,,32.0,MARKET ABOUT STEADY,occasional higher
+2026-06-09,Miami,230,Colombia,BASE,30.0,32.0,,,32.0,MARKET ABOUT STEADY,occasional higher
