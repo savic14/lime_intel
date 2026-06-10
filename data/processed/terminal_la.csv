@@ -1039,3 +1039,14 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-06-09,Los Angeles,230,Mexico,Fine Appearance,32.0,,,,,MARKET STEADY,
 2026-06-09,Los Angeles,250,Mexico,BASE,,,,,,MARKET STEADY,insufficient to quote
 2026-06-09,Los Angeles,250,Mexico,Fine Appearance,28.0,,,,,MARKET STEADY,
+2026-06-10,Los Angeles,110,Mexico,Fine Appearance,38.0,,,,,MARKET STEADY,
+2026-06-10,Los Angeles,150,Mexico,Fine Appearance,38.0,38.0,,,38.0,MARKET STEADY,
+2026-06-10,Los Angeles,150,Mexico,BASE,,,,,,MARKET STEADY,insufficient to quote
+2026-06-10,Los Angeles,175,Mexico,Fine Appearance,40.0,,,,,MARKET STEADY,
+2026-06-10,Los Angeles,175,Mexico,BASE,30.0,32.0,,,32.0,MARKET STEADY,
+2026-06-10,Los Angeles,200,Mexico,BASE,28.0,32.0,29.0,30.0,30.0,MARKET STEADY,
+2026-06-10,Los Angeles,200,Mexico,Fine Appearance,35.0,,,,,MARKET STEADY,
+2026-06-10,Los Angeles,230,Mexico,BASE,26.0,30.0,27.0,28.0,28.0,MARKET STEADY,
+2026-06-10,Los Angeles,230,Mexico,Fine Appearance,32.0,,,,,MARKET STEADY,
+2026-06-10,Los Angeles,250,Mexico,Fine Appearance,28.0,,,,,MARKET STEADY,
+2026-06-10,Los Angeles,250,Mexico,BASE,,,,,,MARKET STEADY,insufficient to quote
