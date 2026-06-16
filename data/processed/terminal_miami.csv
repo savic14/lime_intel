@@ -658,3 +658,11 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-06-15,Miami,200,Mexico,BASE,27.0,32.0,,,32.0,MARKET CB AND PE LOWER; OTHERS ABOUT STEADY,occasional higher
 2026-06-15,Miami,200,Colombia,BASE,22.0,24.0,,,24.0,MARKET CB AND PE LOWER; OTHERS ABOUT STEADY,occasional higher
 2026-06-15,Miami,230,Colombia,BASE,23.0,24.0,,,24.0,MARKET CB AND PE LOWER; OTHERS ABOUT STEADY,occasional higher
+2026-06-16,Miami,110,Peru,BASE,23.0,25.0,,,25.0,MARKET ABOUT STEADY,
+2026-06-16,Miami,110,Colombia,BASE,23.0,25.0,,,25.0,MARKET ABOUT STEADY,occasional higher
+2026-06-16,Miami,150,Colombia,BASE,23.0,25.0,,,25.0,MARKET ABOUT STEADY,occasional higher
+2026-06-16,Miami,150,Peru,BASE,23.0,24.0,,,24.0,MARKET ABOUT STEADY,
+2026-06-16,Miami,175,Peru,BASE,22.0,24.0,,,24.0,MARKET ABOUT STEADY,
+2026-06-16,Miami,200,Mexico,BASE,27.0,32.0,,,32.0,MARKET ABOUT STEADY,occasional higher
+2026-06-16,Miami,200,Colombia,BASE,22.0,24.0,,,24.0,MARKET ABOUT STEADY,occasional higher
+2026-06-16,Miami,230,Colombia,BASE,23.0,24.0,,,24.0,MARKET ABOUT STEADY,occasional higher
