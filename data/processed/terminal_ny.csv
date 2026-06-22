@@ -891,3 +891,8 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-06-18,New York,200,Honduras,BASE,33.0,35.0,,,35.0,MARKET ABOUT STEADY,
 2026-06-18,New York,230,Mexico,BASE,24.0,26.0,,,26.0,MARKET ABOUT STEADY,
 2026-06-18,New York,250,Mexico,BASE,18.0,18.0,,,18.0,MARKET ABOUT STEADY,
+2026-06-22,New York,150,Mexico,BASE,30.0,32.0,,,32.0,,
+2026-06-22,New York,175,Mexico,BASE,26.0,28.0,,,28.0,,
+2026-06-22,New York,200,Mexico,BASE,24.0,26.0,,,26.0,,
+2026-06-22,New York,230,Mexico,BASE,18.0,20.0,,,20.0,,some 16.00
+2026-06-22,New York,250,Mexico,BASE,14.0,16.0,,,16.0,,
