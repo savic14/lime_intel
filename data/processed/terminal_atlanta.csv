@@ -1251,3 +1251,12 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-06-22,Atlanta,200,Mexico,BASE,35.0,38.0,36.0,37.0,37.0,,occasional higher/lower
 2026-06-22,Atlanta,200,Mexico,Fair Quality,26.0,28.0,,,28.0,,poorer quality and condition lower
 2026-06-22,Atlanta,230,Mexico,BASE,30.0,32.0,31.0,32.0,32.0,,occasional lower
+2026-06-23,Atlanta,110,Mexico,BASE,40.0,42.0,,,42.0,"MARKET SEEDED TYPE STEADY, COLOMBIA AND MEXICO LOWER",
+2026-06-23,Atlanta,150,Mexico,Fine Appearance,36.0,37.0,,,37.0,"MARKET SEEDED TYPE STEADY, COLOMBIA AND MEXICO LOWER",
+2026-06-23,Atlanta,150,Mexico,BASE,30.0,32.0,31.0,32.0,32.0,"MARKET SEEDED TYPE STEADY, COLOMBIA AND MEXICO LOWER",occasional lower
+2026-06-23,Atlanta,175,Mexico,Fine Appearance,35.0,36.0,36.0,36.0,36.0,"MARKET SEEDED TYPE STEADY, COLOMBIA AND MEXICO LOWER",occasional higher
+2026-06-23,Atlanta,175,Mexico,Fair Quality,25.0,27.0,,,27.0,"MARKET SEEDED TYPE STEADY, COLOMBIA AND MEXICO LOWER",poorer quality and condition lower
+2026-06-23,Atlanta,175,Mexico,BASE,30.0,33.0,32.0,32.0,32.0,"MARKET SEEDED TYPE STEADY, COLOMBIA AND MEXICO LOWER",occasional higher/lower
+2026-06-23,Atlanta,200,Mexico,Fine Appearance,28.0,29.0,,,29.0,"MARKET SEEDED TYPE STEADY, COLOMBIA AND MEXICO LOWER",
+2026-06-23,Atlanta,200,Mexico,BASE,20.0,22.0,,,22.0,"MARKET SEEDED TYPE STEADY, COLOMBIA AND MEXICO LOWER",occasional higher/lower
+2026-06-23,Atlanta,230,Mexico,BASE,23.0,25.0,,,25.0,"MARKET SEEDED TYPE STEADY, COLOMBIA AND MEXICO LOWER",occasional lower
