@@ -1166,3 +1166,18 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-06-23,Los Angeles,250,Mexico,Fair Quality,12.0,16.0,13.0,14.0,14.0,MARKET STEADY,
 2026-06-23,Los Angeles,250,Mexico,Fine Appearance,34.0,,,,,MARKET STEADY,
 2026-06-23,Los Angeles,250,Mexico,BASE,23.0,,,,,MARKET STEADY,
+2026-06-24,Los Angeles,110,Mexico,Fine Appearance,,,,,,MARKET STEADY,insufficient to quote
+2026-06-24,Los Angeles,110,Mexico,BASE,,,,,,MARKET STEADY,insufficient to quote
+2026-06-24,Los Angeles,150,Mexico,BASE,28.0,32.0,29.0,30.0,30.0,MARKET STEADY,
+2026-06-24,Los Angeles,150,Mexico,Fine Appearance,38.0,,,,,MARKET STEADY,
+2026-06-24,Los Angeles,175,Mexico,BASE,30.0,32.0,,,32.0,MARKET STEADY,occasional higher/lower
+2026-06-24,Los Angeles,175,Mexico,Fine Appearance,40.0,,,,,MARKET STEADY,
+2026-06-24,Los Angeles,200,Mexico,BASE,28.0,32.0,29.0,30.0,30.0,MARKET STEADY,occasional lower
+2026-06-24,Los Angeles,200,Mexico,Fair Quality,22.0,24.0,,,24.0,MARKET STEADY,occasional lower
+2026-06-24,Los Angeles,200,Mexico,Fine Appearance,38.0,,,,,MARKET STEADY,
+2026-06-24,Los Angeles,230,Mexico,Fine Appearance,30.0,35.0,32.0,34.0,34.0,MARKET STEADY,
+2026-06-24,Los Angeles,230,Mexico,BASE,24.0,30.0,24.0,26.0,26.0,MARKET STEADY,
+2026-06-24,Los Angeles,230,Mexico,Fair Quality,16.0,18.0,,,18.0,MARKET STEADY,
+2026-06-24,Los Angeles,250,Mexico,Fair Quality,12.0,16.0,13.0,14.0,14.0,MARKET STEADY,
+2026-06-24,Los Angeles,250,Mexico,Fine Appearance,34.0,,,,,MARKET STEADY,
+2026-06-24,Los Angeles,250,Mexico,BASE,23.0,,,,,MARKET STEADY,
