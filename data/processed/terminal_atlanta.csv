@@ -1305,3 +1305,12 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-06-30,Atlanta,200,Mexico,BASE,21.0,24.0,22.0,23.0,23.0,"MARKET MEXICO 40-POUND CARTONS 110S SLIGHTLY LOWER, OTHERS ABOUT SEADY",occasional higher/lower
 2026-06-30,Atlanta,200,Mexico,Fine Appearance,28.0,29.0,,,29.0,"MARKET MEXICO 40-POUND CARTONS 110S SLIGHTLY LOWER, OTHERS ABOUT SEADY",few lots 31.00
 2026-06-30,Atlanta,230,Mexico,BASE,23.0,25.0,,,25.0,"MARKET MEXICO 40-POUND CARTONS 110S SLIGHTLY LOWER, OTHERS ABOUT SEADY",occasional lower
+2026-07-01,Atlanta,110,Mexico,BASE,34.0,36.0,,,36.0,MARKET ABOUT STEADY,
+2026-07-01,Atlanta,150,Mexico,BASE,30.0,32.0,30.0,31.0,31.0,MARKET ABOUT STEADY,occasional lower
+2026-07-01,Atlanta,150,Mexico,Fine Appearance,36.0,37.0,,,37.0,MARKET ABOUT STEADY,
+2026-07-01,Atlanta,175,Mexico,Fair Quality,24.0,26.0,,,26.0,MARKET ABOUT STEADY,poorer quality and condition lower
+2026-07-01,Atlanta,175,Mexico,Fine Appearance,34.0,36.0,34.0,35.0,35.0,MARKET ABOUT STEADY,occasional higher
+2026-07-01,Atlanta,175,Mexico,BASE,28.0,31.0,29.0,30.0,30.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-07-01,Atlanta,200,Mexico,Fine Appearance,28.0,29.0,,,29.0,MARKET ABOUT STEADY,few lots 31.00
+2026-07-01,Atlanta,200,Mexico,BASE,21.0,24.0,22.0,23.0,23.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-07-01,Atlanta,230,Mexico,BASE,23.0,25.0,,,25.0,MARKET ABOUT STEADY,occasional lower
