@@ -909,3 +909,10 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-07-02,Chicago,200,Mexico,BASE,20.0,20.0,,,20.0,MARKET 150S HIGHER; OTHERS LOWER,
 2026-07-02,Chicago,230,Mexico,BASE,17.0,20.0,18.0,18.0,18.0,MARKET 150S HIGHER; OTHERS LOWER,
 2026-07-02,Chicago,250,Mexico,BASE,15.0,15.0,,,15.0,MARKET 150S HIGHER; OTHERS LOWER,
+2026-07-06,Chicago,110,Mexico,BASE,26.0,29.0,28.0,28.0,28.0,,
+2026-07-06,Chicago,150,Mexico,BASE,26.0,28.0,,,28.0,,
+2026-07-06,Chicago,150,Mexico,Fair Quality,20.0,22.0,,,22.0,,
+2026-07-06,Chicago,175,Mexico,BASE,20.0,24.0,21.0,23.0,23.0,,Few Low as 18.00
+2026-07-06,Chicago,200,Mexico,BASE,18.0,20.0,,,20.0,,
+2026-07-06,Chicago,230,Mexico,BASE,18.0,20.0,,,20.0,,
+2026-07-06,Chicago,250,Mexico,BASE,16.0,16.0,,,16.0,,
