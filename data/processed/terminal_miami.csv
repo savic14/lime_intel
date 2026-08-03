@@ -950,7 +950,11 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-07-31,Miami,110,Mexico,BASE,19.0,20.0,,,20.0,MARKET STEADY,occasional higher
 2026-07-31,Miami,150,Mexico,BASE,19.0,22.0,20.0,,22.0,MARKET STEADY,
 2026-07-31,Miami,150,Colombia,BASE,18.0,,,,,MARKET STEADY,
-2026-07-31,Miami,175,Mexico,BASE,19.0,22.0,20.0,,22.0,MARKET STEADY,
 2026-07-31,Miami,175,Colombia,BASE,18.0,18.0,,,18.0,MARKET STEADY,
+2026-07-31,Miami,175,Mexico,BASE,19.0,22.0,20.0,,22.0,MARKET STEADY,
 2026-07-31,Miami,200,Mexico,BASE,19.0,22.0,,,22.0,MARKET STEADY,
 2026-07-31,Miami,200,Colombia,BASE,18.0,,,,,MARKET STEADY,occasional higher
+2026-08-03,Miami,110,Mexico,BASE,25.0,,,,,MARKET ABOUT STEADY,occasional lower
+2026-08-03,Miami,150,Mexico,BASE,17.0,23.0,22.0,23.0,23.0,MARKET ABOUT STEADY,some high as 25.00
+2026-08-03,Miami,175,Mexico,BASE,19.0,,,,,MARKET ABOUT STEADY,
+2026-08-03,Miami,200,Mexico,BASE,19.0,22.0,,,22.0,MARKET ABOUT STEADY,
