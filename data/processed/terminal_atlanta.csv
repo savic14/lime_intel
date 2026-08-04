@@ -1512,3 +1512,11 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-08-03,Atlanta,200,Mexico,Fine Appearance,22.0,25.0,23.0,24.0,24.0,MARKET STEADY,few lots 27.00
 2026-08-03,Atlanta,200,Mexico,BASE,18.0,20.0,18.0,19.0,19.0,MARKET STEADY,occasional higher/lower
 2026-08-03,Atlanta,230,Mexico,BASE,18.0,20.0,18.0,19.0,19.0,MARKET STEADY,occasional lower
+2026-08-04,Atlanta,110,Mexico,BASE,26.0,27.0,,,27.0,,
+2026-08-04,Atlanta,150,Mexico,Fine Appearance,25.0,26.0,,,26.0,,
+2026-08-04,Atlanta,150,Mexico,BASE,19.0,22.0,20.0,21.0,21.0,,occasional lower
+2026-08-04,Atlanta,175,Mexico,Fine Appearance,23.0,23.0,,,23.0,,
+2026-08-04,Atlanta,175,Mexico,BASE,19.0,21.0,20.0,21.0,21.0,,occasional higher/lower
+2026-08-04,Atlanta,200,Mexico,Fine Appearance,22.0,25.0,23.0,24.0,24.0,,few lots 27.00
+2026-08-04,Atlanta,200,Mexico,BASE,18.0,20.0,18.0,19.0,19.0,,occasional higher/lower
+2026-08-04,Atlanta,230,Mexico,BASE,18.0,20.0,18.0,19.0,19.0,,occasional lower
