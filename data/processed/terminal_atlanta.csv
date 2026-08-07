@@ -1528,3 +1528,11 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-08-05,Atlanta,200,Mexico,Fine Appearance,21.0,24.0,22.0,23.0,23.0,"MARKET 10-POUND CARTONS 36S SLIGHTLY LOWER, OTHERS ABOUT STEADY",few 25.00
 2026-08-05,Atlanta,200,Mexico,BASE,18.0,20.0,18.0,19.0,19.0,"MARKET 10-POUND CARTONS 36S SLIGHTLY LOWER, OTHERS ABOUT STEADY",occasional higher/lower
 2026-08-05,Atlanta,230,Mexico,BASE,18.0,20.0,18.0,19.0,19.0,"MARKET 10-POUND CARTONS 36S SLIGHTLY LOWER, OTHERS ABOUT STEADY",occasional lower
+2026-08-06,Atlanta,110,Mexico,BASE,27.5,29.5,,,29.5,MARKET ABOUT STEADY,
+2026-08-06,Atlanta,150,Mexico,BASE,19.0,22.0,20.0,21.0,21.0,MARKET ABOUT STEADY,occasional lower
+2026-08-06,Atlanta,150,Mexico,Fine Appearance,24.0,25.0,,,25.0,MARKET ABOUT STEADY,
+2026-08-06,Atlanta,175,Mexico,BASE,19.0,21.0,20.0,21.0,21.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-08-06,Atlanta,175,Mexico,Fine Appearance,23.0,25.0,,,25.0,MARKET ABOUT STEADY,
+2026-08-06,Atlanta,200,Mexico,BASE,18.0,20.0,18.0,19.0,19.0,MARKET ABOUT STEADY,occasional higher/lower
+2026-08-06,Atlanta,200,Mexico,Fine Appearance,21.0,24.0,22.0,23.0,23.0,MARKET ABOUT STEADY,few 25.00
+2026-08-06,Atlanta,230,Mexico,BASE,18.0,20.0,18.0,19.0,19.0,MARKET ABOUT STEADY,occasional lower
