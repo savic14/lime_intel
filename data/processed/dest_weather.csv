@@ -815,24 +815,24 @@ date,city,temp_max,temp_min,precip_mm,tipo
 2026-08-16,Los Angeles,30.2,17.4,0.0,forecast
 2026-08-16,Miami,33.4,26.5,0.0,forecast
 2026-08-16,New York,27.8,20.5,2.6,forecast
-2026-08-17,Atlanta,36.7,24.8,0.0,forecast
-2026-08-17,Chicago,23.2,18.4,0.0,forecast
-2026-08-17,Houston,35.2,22.9,0.0,forecast
-2026-08-17,Los Angeles,31.0,18.2,0.0,forecast
-2026-08-17,Miami,33.2,25.8,0.0,forecast
-2026-08-17,New York,30.0,20.2,7.9,forecast
-2026-08-18,Atlanta,35.4,25.3,0.0,forecast
-2026-08-18,Chicago,25.7,16.3,0.0,forecast
-2026-08-18,Houston,36.2,24.4,0.0,forecast
-2026-08-18,Los Angeles,33.6,17.4,0.0,forecast
-2026-08-18,Miami,35.4,24.9,0.0,forecast
-2026-08-18,New York,30.8,21.4,0.0,forecast
-2026-08-19,Atlanta,37.3,24.5,0.0,forecast
-2026-08-19,Chicago,24.9,18.6,2.93,forecast
-2026-08-19,Houston,39.7,27.5,0.0,forecast
-2026-08-19,Los Angeles,35.2,23.8,0.0,forecast
-2026-08-19,Miami,34.0,28.6,2.1,forecast
-2026-08-19,New York,31.8,23.2,0.0,forecast
+2026-08-17,Atlanta,36.8,25.1,0.0,forecast
+2026-08-17,Chicago,22.5,18.4,0.0,forecast
+2026-08-17,Houston,35.3,23.1,0.0,forecast
+2026-08-17,Los Angeles,32.1,18.1,0.0,forecast
+2026-08-17,Miami,33.7,25.6,0.0,forecast
+2026-08-17,New York,27.1,20.2,7.9,forecast
+2026-08-18,Atlanta,34.5,24.2,0.0,forecast
+2026-08-18,Chicago,25.3,16.5,0.7,forecast
+2026-08-18,Houston,35.9,24.7,0.0,forecast
+2026-08-18,Los Angeles,34.2,18.3,0.0,forecast
+2026-08-18,Miami,35.2,24.8,0.0,forecast
+2026-08-18,New York,30.2,21.0,0.0,forecast
+2026-08-19,Atlanta,37.3,23.0,0.0,forecast
+2026-08-19,Chicago,24.9,17.8,0.6,forecast
+2026-08-19,Houston,39.7,25.2,0.0,forecast
+2026-08-19,Los Angeles,35.2,20.0,0.0,forecast
+2026-08-19,Miami,34.0,25.0,2.1,forecast
+2026-08-19,New York,31.8,19.7,0.0,forecast
 2026-08-20,Atlanta,39.5,24.6,4.1,forecast
 2026-08-20,Chicago,25.3,18.7,0.0,forecast
 2026-08-20,Houston,39.9,26.9,0.0,forecast
