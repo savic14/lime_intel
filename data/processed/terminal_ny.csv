@@ -1175,3 +1175,7 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-08-18,New York,175,Mexico,BASE,34.0,38.0,36.0,,38.0,MARKET STEADY,
 2026-08-18,New York,200,Mexico,BASE,36.0,40.0,38.0,,40.0,MARKET STEADY,
 2026-08-18,New York,230,Mexico,BASE,36.0,38.0,,,38.0,MARKET STEADY,
+2026-08-19,New York,150,Mexico,BASE,34.0,38.0,36.0,,38.0,MARKET STEADY,
+2026-08-19,New York,175,Mexico,BASE,34.0,38.0,36.0,,38.0,MARKET STEADY,
+2026-08-19,New York,200,Mexico,BASE,36.0,40.0,38.0,,40.0,MARKET STEADY,
+2026-08-19,New York,230,Mexico,BASE,36.0,38.0,,,38.0,MARKET STEADY,
