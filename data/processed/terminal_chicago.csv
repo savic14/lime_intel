@@ -1285,3 +1285,12 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-08-31,Chicago,230,Mexico,Fine Appearance,40.0,40.0,,,40.0,MARKET ABOUT STEADY,
 2026-08-31,Chicago,250,Mexico,Fine Appearance,39.0,39.0,,,39.0,MARKET ABOUT STEADY,
 2026-08-31,Chicago,250,Mexico,BASE,30.0,32.0,,,32.0,MARKET ABOUT STEADY,occasional  higher
+2026-09-01,Chicago,110,Mexico,BASE,30.0,32.0,,,32.0,MARKET STEADY,occasional higher
+2026-09-01,Chicago,150,Mexico,BASE,29.0,30.5,,,30.5,MARKET STEADY,occasional higher
+2026-09-01,Chicago,175,Mexico,BASE,29.0,32.5,,,32.5,MARKET STEADY,occasional higher
+2026-09-01,Chicago,200,Mexico,Fine Appearance,40.0,40.0,,,40.0,MARKET STEADY,
+2026-09-01,Chicago,200,Mexico,BASE,30.0,32.0,,,32.0,MARKET STEADY,occasional higher
+2026-09-01,Chicago,230,Mexico,Fine Appearance,40.0,40.0,,,40.0,MARKET STEADY,
+2026-09-01,Chicago,230,Mexico,BASE,30.0,32.0,,,32.0,MARKET STEADY,occasional higher
+2026-09-01,Chicago,250,Mexico,BASE,30.0,32.0,,,32.0,MARKET STEADY,occasional  higher
+2026-09-01,Chicago,250,Mexico,Fine Appearance,39.0,39.0,,,39.0,MARKET STEADY,
