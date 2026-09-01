@@ -1227,3 +1227,13 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-08-31,New York,200,Mexico,Fine Appearance,36.0,38.0,,,38.0,MARKET SLIGHTLY HIGHER,occasional higher
 2026-08-31,New York,230,Mexico,BASE,30.0,34.0,32.0,,34.0,MARKET SLIGHTLY HIGHER,
 2026-08-31,New York,230,Mexico,Fine Appearance,38.0,40.0,,,40.0,MARKET SLIGHTLY HIGHER,
+2026-09-01,New York,110,Mexico,BASE,30.0,34.0,32.0,,34.0,MARKET STEADY,
+2026-09-01,New York,150,Honduras,Fine Appearance,38.0,40.0,,,40.0,MARKET STEADY,
+2026-09-01,New York,150,Mexico,BASE,30.0,30.0,,,30.0,MARKET STEADY,
+2026-09-01,New York,150,Mexico,Fine Appearance,38.0,40.0,,,40.0,MARKET STEADY,occasional higher
+2026-09-01,New York,175,Mexico,Fine Appearance,36.0,40.0,38.0,,40.0,MARKET STEADY,occasional higher
+2026-09-01,New York,175,Mexico,BASE,32.0,34.0,,,34.0,MARKET STEADY,
+2026-09-01,New York,200,Mexico,Fine Appearance,36.0,38.0,,,38.0,MARKET STEADY,occasional higher
+2026-09-01,New York,200,Mexico,BASE,30.0,34.0,32.0,,34.0,MARKET STEADY,
+2026-09-01,New York,230,Mexico,Fine Appearance,38.0,40.0,,,40.0,MARKET STEADY,
+2026-09-01,New York,230,Mexico,BASE,30.0,34.0,32.0,,34.0,MARKET STEADY,

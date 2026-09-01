@@ -1690,9 +1690,9 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-09-01,Atlanta,110,Mexico,BASE,37.0,38.0,,,38.0,MARKET STEADY,
 2026-09-01,Atlanta,150,Mexico,Fine Appearance,38.0,39.0,39.0,,39.0,MARKET STEADY,
 2026-09-01,Atlanta,150,Mexico,BASE,33.0,36.5,34.0,35.0,35.0,MARKET STEADY,occasional lower
-2026-09-01,Atlanta,175,Mexico,BASE,33.0,35.0,33.0,34.0,34.0,MARKET STEADY,occasional lower
 2026-09-01,Atlanta,175,Mexico,Fine Appearance,37.0,39.0,,,39.0,MARKET STEADY,
-2026-09-01,Atlanta,200,Mexico,BASE,33.0,35.0,34.0,35.0,35.0,MARKET STEADY,occasional lower
+2026-09-01,Atlanta,175,Mexico,BASE,33.0,35.0,33.0,34.0,34.0,MARKET STEADY,occasional lower
 2026-09-01,Atlanta,200,Mexico,Fine Appearance,38.0,40.0,39.0,39.0,39.0,MARKET STEADY,
-2026-09-01,Atlanta,230,Mexico,Fine Appearance,38.0,38.0,,,38.0,MARKET STEADY,
+2026-09-01,Atlanta,200,Mexico,BASE,33.0,35.0,34.0,35.0,35.0,MARKET STEADY,occasional lower
 2026-09-01,Atlanta,230,Mexico,BASE,31.0,34.0,32.0,33.0,33.0,MARKET STEADY,occasional lower
+2026-09-01,Atlanta,230,Mexico,Fine Appearance,38.0,38.0,,,38.0,MARKET STEADY,
