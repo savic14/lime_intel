@@ -1059,3 +1059,7 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-09-04,Miami,150,Mexico,BASE,27.0,32.0,27.0,30.0,30.0,MARKET ABOUT STEADY,occasional higher
 2026-09-04,Miami,175,Mexico,BASE,27.0,32.0,27.0,30.0,30.0,MARKET ABOUT STEADY,occasional higher
 2026-09-04,Miami,200,Mexico,BASE,27.0,32.0,27.0,30.0,30.0,MARKET ABOUT STEADY,
+2026-09-08,Miami,110,Mexico,BASE,27.0,32.0,27.0,30.0,30.0,,
+2026-09-08,Miami,150,Mexico,BASE,27.0,32.0,27.0,30.0,30.0,,occasional higher
+2026-09-08,Miami,175,Mexico,BASE,27.0,32.0,27.0,30.0,30.0,,occasional higher
+2026-09-08,Miami,200,Mexico,BASE,27.0,32.0,27.0,30.0,30.0,,
