@@ -1780,3 +1780,7 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-09-23,Atlanta,175,Mexico,BASE,44.0,45.0,,,45.0,MARKET STEADY,Occasional higher/lower
 2026-09-23,Atlanta,200,Mexico,BASE,44.0,45.0,,,45.0,MARKET STEADY,few high as 49.00
 2026-09-23,Atlanta,230,Mexico,BASE,43.0,44.0,,,44.0,MARKET STEADY,Occasional higher
+2026-09-24,Atlanta,150,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,MARKET ABOUT STEADY,few high as 49.00
+2026-09-24,Atlanta,175,Mexico,BASE,44.0,47.0,45.0,46.0,46.0,MARKET ABOUT STEADY,Occasional higher/lower
+2026-09-24,Atlanta,200,Mexico,BASE,44.0,45.0,,,45.0,MARKET ABOUT STEADY,few high as 49.00
+2026-09-24,Atlanta,230,Mexico,BASE,43.0,44.0,,,44.0,MARKET ABOUT STEADY,Occasional higher
