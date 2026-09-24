@@ -1358,3 +1358,7 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-09-23,New York,175,Mexico,BASE,48.0,52.0,50.0,50.0,50.0,MARKET SLIGHTLY LOWER,occasional higher
 2026-09-23,New York,200,Mexico,BASE,46.0,50.0,48.0,48.0,48.0,MARKET SLIGHTLY LOWER,occasional higher
 2026-09-23,New York,230,Mexico,BASE,46.0,50.0,48.0,48.0,48.0,MARKET SLIGHTLY LOWER,occasional higher
+2026-09-24,New York,150,Mexico,BASE,48.0,52.0,50.0,50.0,50.0,MARKET ABOUT STEADY,occasional higher
+2026-09-24,New York,175,Mexico,BASE,48.0,52.0,50.0,50.0,50.0,MARKET ABOUT STEADY,occasional higher
+2026-09-24,New York,200,Mexico,BASE,46.0,50.0,48.0,48.0,48.0,MARKET ABOUT STEADY,occasional higher
+2026-09-24,New York,230,Mexico,BASE,46.0,50.0,48.0,48.0,48.0,MARKET ABOUT STEADY,occasional higher
