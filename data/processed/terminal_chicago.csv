@@ -1532,3 +1532,16 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-10-07,Chicago,230,Mexico,Fine Appearance,44.0,46.0,,,46.0,MARKET STEADY,
 2026-10-07,Chicago,230,Mexico,BASE,34.0,38.0,35.0,37.0,37.0,MARKET STEADY,Few lower
 2026-10-07,Chicago,250,Mexico,BASE,36.0,38.0,,,38.0,MARKET STEADY,occasional lower
+2026-10-08,Chicago,110,Mexico,Fine Appearance,46.0,48.0,,,48.0,MARKET STEADY,
+2026-10-08,Chicago,110,Mexico,BASE,38.0,40.0,,,40.0,MARKET STEADY,
+2026-10-08,Chicago,150,Mexico,BASE,38.0,40.0,,,40.0,MARKET STEADY,
+2026-10-08,Chicago,150,Mexico,Fine Appearance,48.0,50.0,,,50.0,MARKET STEADY,
+2026-10-08,Chicago,175,Mexico,Fine Appearance,44.0,46.0,,,46.0,MARKET STEADY,
+2026-10-08,Chicago,175,Mexico,BASE,38.0,40.0,,,40.0,MARKET STEADY,
+2026-10-08,Chicago,175,Mexico,Fair Quality,34.0,34.0,,,34.0,MARKET STEADY,
+2026-10-08,Chicago,200,Mexico,Fair Quality,34.0,34.0,,,34.0,MARKET STEADY,
+2026-10-08,Chicago,200,Mexico,BASE,38.0,39.0,,,39.0,MARKET STEADY,
+2026-10-08,Chicago,200,Mexico,Fine Appearance,44.0,46.0,,,46.0,MARKET STEADY,
+2026-10-08,Chicago,230,Mexico,BASE,34.0,38.0,35.0,37.0,37.0,MARKET STEADY,Few lower
+2026-10-08,Chicago,230,Mexico,Fine Appearance,44.0,46.0,,,46.0,MARKET STEADY,
+2026-10-08,Chicago,250,Mexico,BASE,36.0,38.0,,,38.0,MARKET STEADY,occasional lower

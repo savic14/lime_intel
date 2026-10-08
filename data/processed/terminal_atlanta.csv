@@ -1835,3 +1835,10 @@ date,market,size,origin,quality_type,low_price,high_price,mostly_low_price,mostl
 2026-10-07,Atlanta,200,Mexico,Fine Appearance,47.0,50.0,,,50.0,MARKET STEADY,
 2026-10-07,Atlanta,200,Mexico,BASE,43.0,45.0,43.0,44.0,44.0,MARKET STEADY,
 2026-10-07,Atlanta,230,Mexico,BASE,43.0,46.0,44.0,45.0,45.0,MARKET STEADY,few as high as  50.00
+2026-10-08,Atlanta,110,Mexico,BASE,43.0,45.0,44.0,45.0,45.0,MARKET FIRM,few high as 49.00
+2026-10-08,Atlanta,150,Mexico,BASE,43.0,45.0,44.0,45.0,45.0,MARKET FIRM,few high as 50.00
+2026-10-08,Atlanta,175,Mexico,Fine Appearance,48.0,50.0,,,50.0,MARKET FIRM,
+2026-10-08,Atlanta,175,Mexico,BASE,43.0,45.0,43.0,44.0,44.0,MARKET FIRM,occasional higher/lower
+2026-10-08,Atlanta,200,Mexico,BASE,43.0,45.0,43.0,44.0,44.0,MARKET FIRM,
+2026-10-08,Atlanta,200,Mexico,Fine Appearance,47.0,50.0,,,50.0,MARKET FIRM,
+2026-10-08,Atlanta,230,Mexico,BASE,43.0,46.0,44.0,45.0,45.0,MARKET FIRM,few as high as  50.00
